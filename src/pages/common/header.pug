@@ -1,0 +1,56 @@
+header.page__header.page-header
+  .page-header__main
+    .container
+      .page-header__logo.logo
+        .logo__image
+          picture
+          img(
+            src="@img/logo/logo.png",
+            srcset="@img/logo/logo@2x.png 2x"
+            alt="Аспект Медикал Груп",
+            width="100",
+            height="110"
+          )
+        .logo__text
+          img(src="@img/logo/logo_text.svg")
+      .page-header__contacts
+        .page-header__contact-item
+          .page-header__contact-icon
+            +svgSprite("geo", 12, 18)
+          .page-header__contact-text
+            | ул. Краснодарская, 17а
+        .page-header__contact-item
+          .page-header__contact-icon
+            +svgSprite("clock", 18, 18)
+          .page-header__contact-text
+            | пн-сб с 9:00 до 21:00
+      .page-header__contacts
+        .page-header__contact-item.page-header__contact-item--phone
+          .page-header__contact-description
+            | Запись по телефону
+          .page-header__contact-icon
+            +svgSprite("phone", 18, 18)
+          .page-header__contact-text
+            a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
+        .page-header__contact-item
+          .page-header__contact-icon
+            +svgSprite("instagram", 18, 18)
+          .page-header__contact-text
+            a(href=`tel:${contacts.socials.instagram}`) aspect_medical_group
+  nav.page-header__nav
+    .container
+      ul.nav-main
+        li.nav-main__item
+          a.nav-main__link(href="about.html") О клинике
+        li.nav-main__item
+          a.nav-main__link(href="about.html") Услуги и цены
+        li.nav-main__item
+          a.nav-main__link(href="about.html") Отзывы
+        li.nav-main__item
+          a.nav-main__link(href="about.html") Контакты
+  .page-header__bottom
+    .page-header__change-version
+      button#js-change-version.page-header__change-version-btn
+        +svgSprite("eye", 22, 15)
+        span Версия для слабовидящих
+

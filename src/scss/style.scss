@@ -1,0 +1,11 @@
+// Нормализация
+@import "normalize";
+
+// Импорт основных файлов
+@import "fonts";
+@import "variables";
+@import "globals";
+@import "layout";
+
+// Общие блоки
+@import "blocks/page-header";
