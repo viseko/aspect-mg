@@ -25,32 +25,36 @@ header.page__header.page-header
           .page-header__contact-text
             | пн-сб с 9:00 до 21:00
       .page-header__contacts
-        .page-header__contact-item.page-header__contact-item--phone
-          .page-header__contact-description
-            | Запись по телефону
+        .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("phone", 18, 18)
           .page-header__contact-text
+            .page-header__contact-description
+              | Запись по телефону
             a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
         .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("instagram", 18, 18)
           .page-header__contact-text
-            a(href=`tel:${contacts.socials.instagram}`) aspect_medical_group
+            a(href=`${contacts.socials.instagram}` target="_blank") aspect_medical_group
+      button.page-header__mobile-menu-btn
+        +svgSprite("menu", 23, 23)
+        span.visually-hidden Меню
   nav.page-header__nav
     .container
       ul.nav-main
         li.nav-main__item
           a.nav-main__link(href="about.html") О клинике
         li.nav-main__item
-          a.nav-main__link(href="about.html") Услуги и цены
+          a.nav-main__link(href="price.html") Услуги и цены
         li.nav-main__item
-          a.nav-main__link(href="about.html") Отзывы
+          a.nav-main__link(href="reviews.html") Отзывы
         li.nav-main__item
-          a.nav-main__link(href="about.html") Контакты
+          a.nav-main__link(href="contacts.html") Контакты
   .page-header__bottom
-    .page-header__change-version
-      button#js-change-version.page-header__change-version-btn
-        +svgSprite("eye", 22, 15)
-        span Версия для слабовидящих
+    .container
+      .page-header__change-version
+        button#js-change-version.page-header__change-version-btn
+          +svgSprite("eye", 22, 15)
+          span Версия для слабовидящих
 

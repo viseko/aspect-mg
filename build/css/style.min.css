@@ -512,7 +512,7 @@ html {
 body {
   min-width: 320px;
   color: #000;
-  font-family: sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   line-height: unset;
   background-color: #fff;
@@ -537,4 +537,155 @@ h6 {
   font-weight: inherit;
   line-height: inherit;
   margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__image {
+  margin-right: 45px;
+}
+
+.logo__text {
+  width: 449px;
+  height: 71px;
+}
+
+.nav-main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.nav-main__item {
+  margin-right: 80px;
+}
+.nav-main__item:last-child {
+  margin-right: 0;
+}
+
+.nav-main__link {
+  display: block;
+  padding: 9px 15px 10px;
+  transition: 0.1s;
+}
+.nav-main__link:hover {
+  opacity: 0.6;
+}
+.nav-main__link:active {
+  opacity: 0.3;
+}
+
+.page-header__main {
+  padding: 10px 0 15px;
+  background-color: #ECEFF0;
+}
+
+.page-header__main .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  transition: 0.1s;
+}
+.page-header__contacts a {
+  color: #1466AC;
+}
+.page-header__contacts a:hover {
+  text-decoration: underline;
+}
+.page-header__contacts a:active {
+  opacity: 0.6;
+}
+
+.page-header__contact-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.page-header__contact-item:first-child {
+  margin-bottom: 15px;
+}
+
+.page-header__contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  color: #1466AC;
+}
+
+.page-header__contact-description {
+  position: absolute;
+  left: 35px;
+  top: -1.5em;
+  color: #000;
+  font-size: 12px;
+}
+
+.page-header__nav {
+  background-color: #008CB8;
+  color: #fff;
+}
+
+.page-header__bottom .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-header__change-version {
+  padding: 10px 0;
+}
+
+.page-header__change-version-btn {
+  display: flex;
+  align-items: center;
+  color: #008CB8;
+  border: 0;
+  background: none;
+  transition: 0.1s;
+}
+.page-header__change-version-btn:hover {
+  color: #009fd2;
+}
+.page-header__change-version-btn:active {
+  opacity: 0.6;
+}
+.page-header__change-version-btn svg {
+  margin-right: 15px;
+}
+
+.page-header__mobile-menu-btn {
+  display: none;
 }

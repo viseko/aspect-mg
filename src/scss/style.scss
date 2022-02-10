@@ -8,4 +8,8 @@
 @import "layout";
 
 // Общие блоки
-@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/nav-main";
+
+// Общие секции
+@import "sections/page-header";

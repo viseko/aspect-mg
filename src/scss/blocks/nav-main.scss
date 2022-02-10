@@ -1,0 +1,30 @@
+.nav-main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: $cl-white;
+}
+
+.nav-main__item {
+  margin-right: 80px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-main__link {
+  display: block;
+  padding: 9px 15px 10px;
+  transition: 0.1s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

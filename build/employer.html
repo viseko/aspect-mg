@@ -37,14 +37,15 @@
               </div>
             </div>
             <div class="page-header__contacts">
-              <div class="page-header__contact-item page-header__contact-item--phone">
-                <div class="page-header__contact-description">Запись по телефону</div>
+              <div class="page-header__contact-item">
                 <div class="page-header__contact-icon">
                     <svg width="18" height="18">
                       <use xlink:href="img/icons/icons.svg#phone"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text"><a href="tel:+7(391)267-34-51">+7(391)267-34-51</a></div>
+                <div class="page-header__contact-text">
+                  <div class="page-header__contact-description">Запись по телефону</div><a href="tel:+7(391)267-34-51">+7(391)267-34-51</a>
+                </div>
               </div>
               <div class="page-header__contact-item">
                 <div class="page-header__contact-icon">
@@ -52,28 +53,35 @@
                       <use xlink:href="img/icons/icons.svg#instagram"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text"><a href="tel:https://www.instagram.com/aspect_medical_group/">aspect_medical_group</a></div>
+                <div class="page-header__contact-text"><a href="https://www.instagram.com/aspect_medical_group/" target="_blank">aspect_medical_group</a></div>
               </div>
             </div>
+            <button class="page-header__mobile-menu-btn">
+                <svg width="23" height="23">
+                  <use xlink:href="img/icons/icons.svg#menu"></use>
+                </svg><span class="visually-hidden">Меню</span>
+            </button>
           </div>
         </div>
         <nav class="page-header__nav">
           <div class="container">
             <ul class="nav-main">
               <li class="nav-main__item"><a class="nav-main__link" href="about.html">О клинике</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="about.html">Услуги и цены</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="about.html">Отзывы</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="about.html">Контакты</a></li>
+              <li class="nav-main__item"><a class="nav-main__link" href="price.html">Услуги и цены</a></li>
+              <li class="nav-main__item"><a class="nav-main__link" href="reviews.html">Отзывы</a></li>
+              <li class="nav-main__item"><a class="nav-main__link" href="contacts.html">Контакты</a></li>
             </ul>
           </div>
         </nav>
         <div class="page-header__bottom">
-          <div class="page-header__change-version">
-            <button class="page-header__change-version-btn" id="js-change-version">
-                <svg width="22" height="15">
-                  <use xlink:href="img/icons/icons.svg#eye"></use>
-                </svg><span>Версия для слабовидящих</span>
-            </button>
+          <div class="container">
+            <div class="page-header__change-version">
+              <button class="page-header__change-version-btn" id="js-change-version">
+                  <svg width="22" height="15">
+                    <use xlink:href="img/icons/icons.svg#eye"></use>
+                  </svg><span>Версия для слабовидящих</span>
+              </button>
+            </div>
           </div>
         </div>
       </header>
