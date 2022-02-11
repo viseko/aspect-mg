@@ -51,7 +51,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: $tablet) {
   .page-footer .container {
     flex-direction: column;
   }

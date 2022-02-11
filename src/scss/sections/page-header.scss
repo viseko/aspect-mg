@@ -112,14 +112,14 @@
 }
 
 // Desktop - S
-@media (max-width: 1075px) {
+@media (max-width: $desktop-sm) {
   .page-header__contacts--address {
     order: -1;
   }
 }
 
 // Tablet
-@media (max-width: 750px) {
+@media (max-width: $tablet) {
   .page-header__contacts--address {
     order: unset;
   }

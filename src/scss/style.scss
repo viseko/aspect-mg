@@ -13,8 +13,12 @@
 @import "blocks/nav-footer";
 @import "blocks/social-links";
 @import "blocks/mobile-menu";
+@import "blocks/btn";
 
 // Общие секции
+@import "sections/section";
 @import "sections/page-header";
 @import "sections/page-footer";
 
+// Секции главной страницы
+@import "sections/service";

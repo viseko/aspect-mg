@@ -6,6 +6,7 @@ $cl-gray: #CFD0D0;
 $cl-white: #FFF;
 $cl-black: #000;
 $cl-darkgray: #1E2325;
+$cl-red: #B82100;
 
 // Цвета по умолчанию
 $g-bg-color: $cl-white; // фон
@@ -15,3 +16,7 @@ $g-text-color: $cl-black; // текст
 $g-font-size: 16px;
 $g-font: "Roboto";
 $g-line-height: unset;
+
+// Разрешения
+$desktop-sm: 1750px;
+$tablet: 750px;

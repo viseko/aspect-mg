@@ -1,0 +1,80 @@
+.service {
+  // Пока не требуется
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.service__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 160px;
+  margin-bottom: 25px;
+  counter-increment: num;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 57px);
+    width: 26px;
+    height: 26px;
+    background-color: $cl-white;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: counter(num);
+    position: absolute;
+    top: -2px;
+    left: calc(50% - 53px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    background-color: $cl-white;
+    border: 1px solid $cl-red;
+    border-radius: 50%;
+  }
+}
+
+.service__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 13px;
+  color: $cl-blue;
+  border: 2px solid $cl-blue;
+  border-radius: 10px;
+}
+
+.service__title {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 140px;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.service__btn {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
