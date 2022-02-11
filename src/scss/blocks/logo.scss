@@ -11,3 +11,45 @@
   width: 449px;
   height: 71px;
 }
+
+@media (max-width: 1075px) {
+  .logo {
+    flex-direction: column;
+  }
+
+  .logo__image {
+    margin-right: 0;
+    width: 61px;
+    height: 67px;
+  }
+
+  .logo__text {
+    width: 290px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    flex-direction: column;
+  }
+
+  .logo__image {
+    width: 47px;
+    height: 51px;
+  }
+
+  .logo__text {
+    display: none;
+  }
+
+  .logo--mobile-menu .logo__image {
+    width: 61px;
+    height: 67px;
+  }
+
+  .logo--mobile-menu .logo__text {
+    display: block;
+  }
+}
+

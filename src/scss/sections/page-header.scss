@@ -3,8 +3,21 @@
 }
 
 .page-header__main {
+  position: relative;
   padding: 10px 0 15px;
   background-color: $cl-silver;
+
+  a {
+    color: $cl-darkblue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-header__main .container {
@@ -23,27 +36,16 @@
   flex-direction: column;
   padding-top: 20px;
   transition: 0.1s;
-
-  a {
-    color: $cl-darkblue;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
-  }
 }
 
 .page-header__contact-item {
   position: relative;
   display: flex;
+  margin-bottom: 15px;
   align-items: center;
 
-  &:first-child {
-    margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -59,6 +61,7 @@
 }
 
 .page-header__contact-text {
+  // Пока не требуется
 }
 
 .page-header__contact-description {
@@ -106,4 +109,51 @@
 
 .page-header__mobile-menu-btn {
   display: none;
+}
+
+// Desktop - S
+@media (max-width: 1075px) {
+  .page-header__contacts--address {
+    order: -1;
+  }
+}
+
+// Tablet
+@media (max-width: 750px) {
+  .page-header__contacts--address {
+    order: unset;
+  }
+
+  .page-header__nav,
+  .page-header__bottom {
+    display: none;
+  }
+
+  .page-header__mobile-menu-btn {
+    display: block;
+    padding: 0;
+    width: 35px;
+    height: 23px;
+    color: $cl-darkblue;
+    border: 0;
+    background: none;
+    transform: 0.1s;
+
+    ._menu-open & {
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $cl-blue;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

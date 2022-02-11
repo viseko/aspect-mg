@@ -28,3 +28,20 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: 1075px) {
+  .nav-main {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-main {
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .nav-main__item {
+    margin-right: 0;
+  }
+}

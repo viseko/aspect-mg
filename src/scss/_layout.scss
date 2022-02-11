@@ -1,10 +1,19 @@
 .page {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.page__header {
-
+.page__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  transition: background-color 0.5s;
+  pointer-events: none;
 }
 
 .container {
@@ -14,6 +23,37 @@
   padding: 0 20px;
 }
 
-.mobile-menu {
-
+// Сдвиг страницы при включенном мобильном меню
+body {
+  position: relative;
 }
+
+.page,
+.mobile-menu {
+  transition: transform 0.5s;
+}
+
+@media (max-width: 750px) {
+  ._menu-open {
+    body {
+      overflow: hidden;
+    }
+
+    .page,
+    .mobile-menu {
+      transform: translateX(-350px);
+    }
+
+    .page__overlay {
+      background-color: rgba(#000, 0.7);
+      pointer-events: all;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  ._menu-open .mobile-menu {
+    transform: translateX(-100%);
+  }
+}
+

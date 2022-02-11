@@ -13,36 +13,36 @@ header.page__header.page-header
           )
         .logo__text
           img(src="@img/logo/logo_text.svg")
-      .page-header__contacts
+      .page-header__contacts.page-header__contacts--address(data-am=".mobile-menu__contacts/(max-width: 750px)")
         .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("geo", 12, 18)
           .page-header__contact-text
-            | ул. Краснодарская, 17а
+            | #{contacts.address.slice(contacts.address.indexOf(",") + 2)}
         .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("clock", 18, 18)
           .page-header__contact-text
-            | пн-сб с 9:00 до 21:00
+            | #{contacts.time}
       .page-header__contacts
         .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("phone", 18, 18)
           .page-header__contact-text
             .page-header__contact-description
-              | Запись по телефону
+              | Запись по телефону:
             a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
-        .page-header__contact-item
+        .page-header__contact-item(data-am=".page-header__contacts--address/(max-width: 750px)")
           .page-header__contact-icon
             +svgSprite("instagram", 18, 18)
           .page-header__contact-text
             a(href=`${contacts.socials.instagram}` target="_blank") aspect_medical_group
-      button.page-header__mobile-menu-btn
+      button#js-menu-btn.page-header__mobile-menu-btn
         +svgSprite("menu", 23, 23)
-        span.visually-hidden Меню
+        span.visually-hidden Открыть мобильное меню
   nav.page-header__nav
     .container
-      ul.nav-main
+      ul.nav-main(data-am=".mobile-menu__nav/(max-width: 750px)")
         li.nav-main__item
           a.nav-main__link(href="about.html") О клинике
         li.nav-main__item

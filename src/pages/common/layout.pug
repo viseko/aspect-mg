@@ -17,11 +17,30 @@ html(lang="ru")
 
   body
     .page
+      #js-page-overlay.page__overlay
       block header
         include header
       block content
       block footer
         include footer
-      block scripts
-        script(src="js/app.min.js")
     .mobile-menu
+      button#js-menu-close.mobile-menu__close-btn
+        +svgSprite("close", 23, 23)
+        span.visually-hidden Закрыть мобильное меню
+      .mobile-menu__content
+        .logo.logo--mobile-menu
+          .logo__image
+            picture
+            img(
+              src="@img/logo/logo.png",
+              srcset="@img/logo/logo@2x.png 2x"
+              alt="Аспект Медикал Груп",
+              width="100",
+              height="110"
+            )
+          .logo__text
+            img(src="@img/logo/logo_text-white.svg")
+        .mobile-menu__nav
+        .mobile-menu__contacts
+  block scripts
+      script(src="js/app.min.js")
