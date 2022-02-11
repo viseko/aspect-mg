@@ -1,0 +1,63 @@
+.page-footer {
+  padding: 40px 0;
+  background-color: $cl-darkgray;
+  color: $cl-gray;
+
+  a {
+    transition: 0.1s;
+
+    &:hover {
+      color: $cl-white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer__nav {
+  // Пока не требуется
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.page-footer__banners {
+  display: flex;
+}
+
+.page-footer__banner {
+  display: block;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-footer .container {
+    flex-direction: column;
+  }
+
+  .page-footer__nav,
+  .page-footer__contacts {
+    margin-bottom: 40px;
+  }
+}

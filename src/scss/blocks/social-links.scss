@@ -1,0 +1,36 @@
+.social-links {
+  display: flex;
+}
+
+.social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+  color: $cl-white;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: background-image background-color 0.3s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-links__link--instagram {
+  background-image: linear-gradient(-45deg,#CE2C74, #5A45BA);
+
+  &:hover {
+    background-image: linear-gradient(-45deg, lighten(#CE2C74, 10%), lighten(#5A45BA, 10%));
+  }
+}
+
+.social-links__link--mail {
+  background-color: $cl-blue;
+
+  &:hover {
+    background-color: lighten($cl-blue, 10%);
+  }
+}
