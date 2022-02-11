@@ -13,7 +13,7 @@ header.page__header.page-header
           )
         .logo__text
           img(src="@img/logo/logo_text.svg")
-      .page-header__contacts.page-header__contacts--address(data-am=".mobile-menu__contacts/(max-width: 750px)")
+      .page-header__contacts.page-header__contacts--address(data-am=".mobile-menu__contacts/(max-width: 800px)")
         .page-header__contact-item
           .page-header__contact-icon
             +svgSprite("geo", 12, 18)
@@ -32,7 +32,7 @@ header.page__header.page-header
             .page-header__contact-description
               | Запись по телефону:
             a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
-        .page-header__contact-item(data-am=".page-header__contacts--address/(max-width: 750px)")
+        .page-header__contact-item(data-am=".page-header__contacts--address/(max-width: 800px)")
           .page-header__contact-icon
             +svgSprite("instagram", 18, 18)
           .page-header__contact-text
