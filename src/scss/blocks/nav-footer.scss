@@ -17,6 +17,10 @@
   }
 }
 
+.nav-footer__item--active {
+  opacity: 0.3;
+}
+
 @media (max-width: $tablet) {
   .nav-footer {
     text-align: center;

@@ -1,18 +1,38 @@
+mixin navItem(name, text)
+  if (page == name)
+    li.nav-main__item.nav-main__item--active
+      span.nav-main__link #{text}
+  else
+    li.nav-main__item
+      a.nav-main__link(href=`${name}.html`) #{text}
+
 header.page__header.page-header
   .page-header__main
     .container
-      .page-header__logo.logo
-        .logo__image
-          picture
-          img(
-            src="@img/logo/logo.png",
-            srcset="@img/logo/logo@2x.png 2x"
-            alt="Аспект Медикал Груп",
-            width="100",
-            height="110"
-          )
-        .logo__text
-          img(src="@img/logo/logo_text.svg")
+      if (page == "index")
+        .page-header__logo.logo
+          .logo__image
+            img(
+              src="@img/logo/logo.png",
+              srcset="@img/logo/logo@2x.png 2x"
+              alt="Аспект Медикал Груп",
+              width="100",
+              height="110"
+            )
+          .logo__text
+            img(src="@img/logo/logo_text.svg")
+      else
+        a(href="index.html").page-header__logo.logo
+          .logo__image
+            img(
+              src="@img/logo/logo.png",
+              srcset="@img/logo/logo@2x.png 2x"
+              alt="Аспект Медикал Груп",
+              width="100",
+              height="110"
+            )
+          .logo__text
+            img(src="@img/logo/logo_text.svg")
       .page-header__contacts.page-header__contacts--address(data-am=".mobile-menu__contacts/(max-width: 800px)")
         .page-header__contact-item
           .page-header__contact-icon
@@ -43,14 +63,10 @@ header.page__header.page-header
   nav.page-header__nav
     .container
       ul.nav-main(data-am=".mobile-menu__nav/(max-width: 750px)")
-        li.nav-main__item
-          a.nav-main__link(href="about.html") О клинике
-        li.nav-main__item
-          a.nav-main__link(href="price.html") Услуги и цены
-        li.nav-main__item
-          a.nav-main__link(href="reviews.html") Отзывы
-        li.nav-main__item
-          a.nav-main__link(href="contacts.html") Контакты
+        +navItem("about", "О клинике")
+        +navItem("services", "Услуги и цены")
+        +navItem("reviews", "Отзывы")
+        +navItem("contacts", "Контакты")
   .page-header__bottom
     .container
       .page-header__change-version

@@ -1,15 +1,20 @@
+mixin navItem(name, text)
+  if (page == name)
+    li.nav-footer__item.nav-footer__item--active
+      span #{text}
+  else
+    li.nav-footer__item
+      a(href=`${name}.html`) #{text}
+
+
 footer.page__footer.page-footer
   .container
     nav.page-footer__nav
       ul.nav-footer
-        li.nav-footer__item
-          a(href="about.html") О клинике
-        li.nav-footer__item
-          a(href="about.html") Услуги и цены
-        li.nav-footer__item
-          a(href="about.html") Отзывы
-        li.nav-footer__item
-          a(href="about.html") Контакты
+        +navItem("about", "О клинике")
+        +navItem("services", "Услуги и цены")
+        +navItem("reviews", "Отзывы")
+        +navItem("contacts", "Контакты")
 
     .page-footer__contacts
       p
