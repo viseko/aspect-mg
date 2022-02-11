@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: $tablet) {
   ._menu-open .mobile-menu__close-btn {
     opacity: 1;
     pointer-events: all;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mobile) {
   .mobile-menu {
     width: 100%;
   }

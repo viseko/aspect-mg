@@ -17,7 +17,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: $tablet) {
   .nav-footer {
     text-align: center;
     max-height: unset;
