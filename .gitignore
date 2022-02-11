@@ -1,1 +1,16 @@
-node_modules
+# Node Modules
+/node_modules/
+
+# Файлы редактора
+.vscode
+
+# Вспомогательные файлы
+/node_modules/
+*.log*
+*.psd
+*.docx
+
+# Собранные файлы проекта
+/build/
+/*.zip
+/.publish/
