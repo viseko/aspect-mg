@@ -2,6 +2,7 @@
 @import "normalize";
 
 // Импорт основных файлов
+@import "mixins";
 @import "fonts";
 @import "variables";
 @import "globals";
@@ -22,3 +23,4 @@
 
 // Секции главной страницы
 @import "sections/service";
+@import "sections/advantages";

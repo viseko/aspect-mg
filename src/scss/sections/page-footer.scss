@@ -49,6 +49,15 @@
   &:last-child {
     margin-right: 0;
   }
+
+  img {
+    transition: 0.2s;
+    will-change: transform;
+  }
+
+  &:hover img {
+    transform: scale(0.95);
+  }
 }
 
 @media (max-width: $tablet) {
