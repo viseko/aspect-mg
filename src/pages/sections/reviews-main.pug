@@ -1,0 +1,42 @@
+//- Шаблон слайда
+mixin slide(data)
+  .swiper-slide.reviews-slider__slide
+    figure.review-slider__photo
+      img(src=`${data.photo[0]}`, srcset=`${data.photo[1]} 2x` width="90" height="90" alt=`Фото: ${data.name}`)
+    b.reviews-slider__name #{data.name}
+    .reviews-slider__text
+      | #{data.text}
+
+//- Разметка секции
+section.section.reviews
+  .container
+    h2.section__title Отзывы
+
+    //- Слайдер Swiper
+    .reviews__slider.reviews-slider
+      //- Кнопки управления слайдером
+      button.reviews-slider__control-btn.reviews-slider__control-btn--prev.js-reviews-prev
+        span.visually-hidden Предыдущий отзыв
+        +svgSprite("arrow-left", 30, 50)
+      button.reviews-slider__control-btn.reviews-slider__control-btn--next.js-reviews-next
+        +svgSprite("arrow-right", 30, 50)
+        span.visually-hidden Следующий отзыв
+      //- Контейнер слайдера
+      .reviews-slider__container
+        .swiper-wrapper
+          +slide(reviews[0])
+          +slide(reviews[1])
+          +slide(reviews[2])
+
+      //- Пагинация
+      .reviews-slider__pagination.js-reviews-pagination
+        //- button.reviews-slider__pagination-bullet
+        //-   span.visually-hidden 1
+        //- button.reviews-slider__pagination-bullet--active
+        //-   span.visually-hidden 2
+        //- button.reviews-slider__pagination-bullet
+        //-   span.visually-hidden 3
+
+    .reviews__buttons
+      a.btn.reviews__btn(href="reviews.html") Все отзывы
+      button.btn.reviews__btn Написать

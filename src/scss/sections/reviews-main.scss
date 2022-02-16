@@ -1,0 +1,151 @@
+.reviews {
+  // Пока не требуется
+}
+
+.reviews__slider {
+  margin-bottom: 20px;
+}
+
+.reviews__buttons {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reviews__btn {
+  margin-right: 10px;
+  flex-grow: 1;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews-slider {
+  position: relative;
+  padding-top: 40px;
+}
+
+.reviews-slider__control-btn {
+  position: absolute;
+  top: 130px;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: $cl-blue;
+
+  &[disabled] {
+    color: $cl-silver;
+  }
+
+  &:not([disabled]):hover {
+    color: lighten($cl-blue, 10%)
+  }
+
+  &:not([disabled]):active {
+    opacity: 0.6;
+  }
+}
+
+.reviews-slider__control-btn--prev {
+  left: 0;
+}
+
+.reviews-slider__control-btn--next {
+  right: 0;
+}
+
+.reviews-slider__container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.reviews-slider__slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 35px 45px 45px 45px;
+  font-family: Robotolight;
+  background-color: $cl-silver;
+  border-radius: 10px;
+}
+
+.review-slider__photo {
+  position: absolute;
+  top: -75px;
+  width: 90px;
+  height: 90px;
+}
+
+.reviews-slider__name {
+  font-size: 24px;
+  color: $cl-blue;
+  margin-bottom: 14px;
+}
+
+.reviews-slider__text {
+  line-height: 28px;
+}
+
+.reviews-slider__pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1;
+}
+
+.reviews-slider__pagination-bullet {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  padding: 0;
+  background: none;
+  background-color: #C4C4C4;
+  border: 0;
+  border-radius: 50%;
+  transform: 0.5s;
+
+  &:hover {
+    background-color: rgba($cl-blue, 0.5);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.reviews-slider__pagination-bullet--active,
+.reviews-slider__pagination-bullet--active:hover {
+  background-color: $cl-blue;
+}
+
+@media (max-width: $tablet) {
+  .reviews .container {
+    padding: 0;
+  }
+
+  .reviews-slider__container {
+    padding: 0;
+  }
+
+  .reviews-slider__control-btn {
+    display: none;
+  }
+
+  .reviews-slider__slide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reviews__buttons {
+    padding: 0 20px;
+  }
+}

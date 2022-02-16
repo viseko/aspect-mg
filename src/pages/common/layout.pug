@@ -15,6 +15,9 @@ html(lang="ru")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       title #{title}
       link(rel="stylesheet", href="css/style.min.css")
+      //- Swiper
+      link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+      script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
 
   body
     .page
@@ -43,5 +46,6 @@ html(lang="ru")
             img(src="@img/logo/logo_text-white.svg")
         .mobile-menu__nav
         .mobile-menu__contacts
+  //- Скрипты
+  script(src="js/app.min.js")
   block scripts
-      script(src="js/app.min.js")
