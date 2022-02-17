@@ -1,6 +1,7 @@
 // import Swiper from "swiper";
 import * as flsFunctions from "./modules/functions.js";
 import {adaptiveMove} from "./modules/adaptive-move.js";
+import {loadYandexMap} from "./modules/yandex-map.js";
 
 // Запуск основных функций
 flsFunctions.isWebp();
@@ -58,4 +59,16 @@ const reviewsSlider = new Swiper(".reviews-slider__container", {
     prevEl: ".js-reviews-prev",
     nextEl: ".js-reviews-next"
   }
+});
+
+// Инициализация загрузчика яндекс-карты
+loadYandexMap({
+  wrapper: ".js-map-wrapper",
+  loader: ".js-map-loader",
+  coords: [56.053924, 92.942286],
+  zoom: 17,
+  markPosition: [56.053924, 92.942286],
+  mark: "img/logo/logo-map.png",
+  markSize: [47, 51],
+  markOffset: [-23, -60]
 });
