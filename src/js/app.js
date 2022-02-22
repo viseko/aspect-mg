@@ -72,3 +72,41 @@ loadYandexMap({
   markSize: [47, 51],
   markOffset: [-23, -60]
 });
+
+// Слайдер с контролирующими органами
+const controlOrgansSlider = {
+  elemClass: ".js-slider-control-organs",
+  media: "(max-width: 1100px)",
+  swiper: null,
+  mathMedia: null,
+
+  init() {
+    if (this.mathMedia) return;
+
+    this.mathMedia = window.matchMedia(this.media);
+    this.mathMedia.addEventListener("change", this.checkMedia.bind(this));
+    this.checkMedia();
+  },
+
+  checkMedia() {
+    if (this.mathMedia.matches && !this.swiper) {
+      this.initSwiper();
+    } else if (this.swiper) {
+      this.destroySwiper();
+    }
+  },
+
+  initSwiper() {
+    console.log("swiper created");
+    this.swiper = new Swiper(this.elemClass, {
+      slidesPerView: "auto",
+      freeMode: true,
+    });
+  },
+
+  destroySwiper() {
+    console.log("swiper destroyed");
+    this.swiper.destroy();
+    this.swiper = null;
+  }
+}.init();

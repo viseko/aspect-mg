@@ -1,16 +1,14 @@
 mixin slide(img, url, alt)
-  .control-organs__item
-        a(href=`${url}` rel="noopener noreferrer" target="_blank").control-organs__link
-          img(src=`@img/organs/${img}.png`, alt=`${alt}`, srcset=`@img/organs/${img}@2x.png 2x`)
+  .swiper-slide.control-organs__item
+    a(href=`${url}` rel="noopener noreferrer" target="_blank").control-organs__link
+      img(src=`@img/organs/${img}.png`, alt=`${alt}`, srcset=`@img/organs/${img}@2x.png 2x`)
 
 section.section.control-organs
   h2.section__title.control-organs__title Контролирующие органы
   .container
     .swiper.control-organs__list.js-slider-control-organs
-      .swiper-container
+      .swiper-wrapper
         +slide("proc", "https://epp.genproc.gov.ru/web/proc_24", "Прокуратура Красноярского края")
         +slide("potreb", "http://24.rospotrebnadzor.ru/", "Управление Роспотребнадзора по Красноярскому краю")
         +slide("zdrav", "https://24reg.roszdravnadzor.gov.ru/", "Федеральная служба по надзору в сфере здравоохранения по Красноярскому краю")
         +slide("minzdrav", "https://kraszdrav.ru/", "Министерство здравоохранения Красноярского края")
-
-
