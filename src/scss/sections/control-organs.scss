@@ -1,0 +1,25 @@
+.control-organs {
+  // Пока не требуется
+}
+
+.control-organs__title {
+  // Пока не требуется
+}
+
+.control-organs__list .swiper-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-organs__item {
+
+}
+
+.control-organs__link {
+  filter: grayscale(1);
+  transition: 0.3s;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
