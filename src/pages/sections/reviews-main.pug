@@ -24,9 +24,8 @@ section.section.reviews
       //- Контейнер слайдера
       .reviews-slider__container
         .swiper-wrapper
-          +slide(reviews[0])
-          +slide(reviews[1])
-          +slide(reviews[2])
+          each review in reviews
+            +slide(review)
 
       //- Пагинация
       .reviews-slider__pagination.js-reviews-pagination
