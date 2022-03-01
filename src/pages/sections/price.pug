@@ -2,7 +2,7 @@ section.section
   .container
     h1.section__title Услуги и цены
 
-  .price-table
+  .price-table.js-price-table
     header.price-table__header
       | Нажмите на нужный раздел, чтобы открыть список
 
@@ -11,7 +11,7 @@ section.section
         li.price-table__item.price-table__item--sublist.price-table__item--top
           .price-table__item-name #{serviceType.name}
           button.price-table__item-btn
-            +svgSprite("arrow-right", 20, 20)
+            +svgSprite("arrow-right", 12, 20)
 
           ul.price-table__sublist
             each serviceItem in serviceType.details
@@ -23,7 +23,7 @@ section.section
                 li.price-table__item.price-table__item--sublist
                   .price-table__item-name #{serviceItem.name}
                   button.price-table__item-btn
-                    +svgSprite("arrow-right", 20, 20)
+                    +svgSprite("arrow-right", 12, 20)
                   ul.price-table__sublist
                     each item in serviceItem.details
                       li.price-table__item.price-table__item--deep

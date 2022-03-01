@@ -110,3 +110,67 @@ const controlOrgansSlider = {
     this.swiper = null;
   }
 }.init();
+
+// Таблица прайс-листа
+const priceTable = document.querySelector(".js-price-table");
+if (priceTable) {
+  priceTable.addEventListener("click", (event) => {
+    const btn = event.target.closest(".price-table__item-btn");
+
+    if (!btn) return;
+
+    const parent = btn.parentNode;
+    const sublist = parent.querySelector("ul");
+    const animate = flsFunctions.animate;
+
+    // parent.classList.toggle("_open");
+
+    if (parent.classList.contains("_open")) {
+      hide()
+    } else {
+      show()
+    }
+
+    function show() {
+      parent.classList.add("_open");
+
+      const sublistHeight = sublist.offsetHeight;
+      sublist.style.height = 0;
+
+      animate({
+        timing(t) {
+          return t;
+        },
+        duration: Math.min(sublistHeight, 300),
+
+        draw(progress) {
+          sublist.style.height = sublistHeight * progress + "px";
+        },
+
+        callback() {
+          sublist.removeAttribute("style");
+        }
+      })
+    }
+
+    function hide() {
+      const sublistHeight = sublist.offsetHeight;
+
+      animate({
+        timing(t) {
+          return t;
+        },
+        duration: Math.min(sublistHeight, 300),
+
+        draw(progress) {
+          sublist.style.height = sublistHeight - sublistHeight * progress + "px";
+        },
+
+        callback() {
+          parent.classList.remove("_open");
+          sublist.removeAttribute("style");
+        }
+      })
+    }
+  });
+}

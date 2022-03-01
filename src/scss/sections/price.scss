@@ -24,6 +24,18 @@ $table-size: 900px;
   font-size: 18px;
 }
 
+.price-table__sublist {
+  display: none;
+  background-color: $cl-white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  ._open > & {
+    display: block;
+  }
+}
+
 .price-table__item {
   display: flex;
   justify-content: space-between;
@@ -53,9 +65,8 @@ $table-size: 900px;
   position: relative;
   display: block;
 
-  ul {
-    margin: 0;
-    padding: 0;
+  .price-table__item-name {
+    padding-right: 55px;
   }
 }
 
@@ -65,7 +76,6 @@ $table-size: 900px;
 
 .price-table__item-name {
   padding: 20px 30px;
-  padding-right: 55px;
 }
 
 .price-table__item-price {
@@ -75,8 +85,12 @@ $table-size: 900px;
 
 .price-table__item-btn {
   position: absolute;
-  top: 20px;
+  top: 23px;
   right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   color: $cl-darkblue;
   background: none;
   border: 0;
@@ -89,12 +103,10 @@ $table-size: 900px;
   &:active {
     opacity: 0.6;
   }
-}
 
-.price-table__sublist {
-  background-color: $cl-white;
-  margin: 0;
-  padding: 0;
+  ._open > & {
+    transform: rotate(-90deg);
+  }
 }
 
 @media (max-width: $table-size) {

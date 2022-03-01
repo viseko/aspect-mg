@@ -13,3 +13,25 @@ export function isWebp() {
     document.documentElement.classList.add(className);
   });
 }
+
+// Анимация
+export function animate({timing, draw, duration, callback}) {
+  let start = performance.now();
+
+  requestAnimationFrame(function animate(time) {
+    // timeFraction изменяется от 0 до 1
+    let timeFraction = Math.min(1, (time - start) / duration);
+
+    // Вычисление текущего состояния анимации
+    let progress = timing(timeFraction);
+    // Отрисовка анимации
+    draw(progress);
+
+    if (timeFraction < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      if (callback) callback();
+    }
+  });
+}
+
