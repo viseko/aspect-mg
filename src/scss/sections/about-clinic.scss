@@ -1,0 +1,33 @@
+.about-clinic {
+  display: flex;
+}
+
+.about-clinic__text {
+  margin-right: 20px;
+}
+
+.about-clinic__right-block {
+  flex: 0 0 300px;
+}
+
+@media (max-width: $tablet) {
+  .about-clinic {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-clinic__text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-clinic__right-block {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .about-clinic__right-block {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.licenses {
+  // Пока не требуется
+}
+
+.licenses__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.licenses__item {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.licenses__item img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: $tablet) {
+  .licenses__item {
+    width: 50%;
+  }
+}
