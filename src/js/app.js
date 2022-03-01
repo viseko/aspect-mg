@@ -97,7 +97,6 @@ const controlOrgansSlider = {
   },
 
   initSwiper() {
-    console.log("swiper created");
     this.swiper = new Swiper(this.elemClass, {
       slidesPerView: "auto",
       freeMode: true,
@@ -105,7 +104,6 @@ const controlOrgansSlider = {
   },
 
   destroySwiper() {
-    console.log("swiper destroyed");
     this.swiper.destroy();
     this.swiper = null;
   }
@@ -123,8 +121,6 @@ if (priceTable) {
     const sublist = parent.querySelector("ul");
     const animate = flsFunctions.animate;
 
-    // parent.classList.toggle("_open");
-
     if (parent.classList.contains("_open")) {
       hide()
     } else {
@@ -141,7 +137,7 @@ if (priceTable) {
         timing(t) {
           return t;
         },
-        duration: Math.min(sublistHeight, 300),
+        duration: Math.max(sublistHeight, 300),
 
         draw(progress) {
           sublist.style.height = sublistHeight * progress + "px";
@@ -160,7 +156,7 @@ if (priceTable) {
         timing(t) {
           return t;
         },
-        duration: Math.min(sublistHeight, 300),
+        duration: Math.max(sublistHeight, 300),
 
         draw(progress) {
           sublist.style.height = sublistHeight - sublistHeight * progress + "px";
