@@ -16,9 +16,12 @@ html(lang="ru")
       title #{title}
       link(rel="stylesheet", href="css/style.min.css")
       //- Swiper
-      link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
-      script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
-
+      if (page == "index")
+        link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+        script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+      //- Favicon
+      link(rel="icon" href="favicon.svg")
+      link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body
     .page
       #js-page-overlay.page__overlay
