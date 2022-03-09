@@ -17,9 +17,9 @@ section.section
     ul.price-table__list
       each serviceType in price
         li.price-table__item.price-table__item--sublist.price-table__item--top
-          .price-table__item-name #{serviceType.name}
-          button.price-table__item-btn
-            +svgSprite("arrow-right", 12, 20)
+          button.price-table__item-name.price-table__btn-show #{serviceType.name}
+            .price-table__item-arrow
+              +svgSprite("arrow-right", 12, 20)
 
           ul.price-table__sublist
             each serviceItem in serviceType.details
@@ -29,9 +29,9 @@ section.section
                   .price-table__item-price #{serviceItem.price}р.
               else
                 li.price-table__item.price-table__item--sublist
-                  .price-table__item-name #{serviceItem.name}
-                  button.price-table__item-btn
-                    +svgSprite("arrow-right", 12, 20)
+                  button.price-table__item-name.price-table__btn-show #{serviceItem.name}
+                    .price-table__item-arrow
+                      +svgSprite("arrow-right", 12, 20)
                   ul.price-table__sublist
                     each item in serviceItem.details
                       li.price-table__item.price-table__item--deep

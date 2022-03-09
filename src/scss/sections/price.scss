@@ -62,7 +62,6 @@ $table-size: 900px;
 }
 
 .price-table__item--sublist {
-  position: relative;
   display: block;
 
   .price-table__item-name {
@@ -78,12 +77,30 @@ $table-size: 900px;
   padding: 20px 30px;
 }
 
+.price-table__btn-show {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  transition: 0.1s;
+
+  &:hover,
+  &:hover .price-table__item-arrow {
+    color: $cl-blue;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .price-table__item-price {
   padding: 20px 30px 20px 0;
   white-space: nowrap;
 }
 
-.price-table__item-btn {
+.price-table__item-arrow {
   position: absolute;
   top: 23px;
   right: 30px;
@@ -95,14 +112,6 @@ $table-size: 900px;
   background: none;
   border: 0;
   transform: rotate(90deg);
-
-  &:hover {
-    color: lighten($cl-darkblue, 10%)
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 
   ._open > & {
     transform: rotate(-90deg);

@@ -113,7 +113,7 @@ const controlOrgansSlider = {
 const priceTable = document.querySelector(".js-price-table");
 if (priceTable) {
   priceTable.addEventListener("click", (event) => {
-    const btn = event.target.closest(".price-table__item-btn");
+    const btn = event.target.closest(".price-table__btn-show");
 
     if (!btn) return;
 
