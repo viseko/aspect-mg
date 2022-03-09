@@ -9,9 +9,10 @@
 
   a {
     color: $cl-darkblue;
+    transition: 0.1s;
 
     &:hover {
-      text-decoration: underline;
+      color: $cl-blue;
     }
 
     &:active {
