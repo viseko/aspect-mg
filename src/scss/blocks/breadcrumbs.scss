@@ -1,0 +1,42 @@
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  padding: 10px 0;
+  margin-right: 5px;
+
+  &::after {
+    content: "/";
+    margin-left: 5px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:last-child::after {
+    content: "";
+  }
+
+  a {
+    color: $cl-darkblue;
+    transition: 0.1s;
+
+    &:hover {
+      color: $cl-blue;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  span {
+    color: $cl-black;
+    opacity: 0.3;
+  }
+}

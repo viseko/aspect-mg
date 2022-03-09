@@ -111,6 +111,10 @@
   display: none;
 }
 
+.page-header__breadcrumbs {
+  margin-right: auto;
+}
+
 // Desktop - S
 @media (max-width: $desktop-sm) {
   .page-header__contacts--address {
@@ -124,9 +128,16 @@
     order: unset;
   }
 
-  .page-header__nav,
-  .page-header__bottom {
+  .page-header__nav {
     display: none;
+  }
+
+  .page-header__change-version {
+    display: none;
+  }
+
+  .page-header__breadcrumbs {
+    margin-left: auto;
   }
 
   .page-header__mobile-menu-btn {

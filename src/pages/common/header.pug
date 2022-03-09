@@ -69,6 +69,12 @@ header.page__header.page-header
         +navItem("contacts", "Контакты")
   .page-header__bottom
     .container
+      if (page != "index")
+        ul.page-header__breadcrumbs.breadcrumbs
+          li.breadcrumbs__item
+            a(href="index.html") Главная
+          li.breadcrumbs__item
+            span #{name}
       .page-header__change-version
         button#js-change-version.page-header__change-version-btn
           +svgSprite("eye", 22, 15)
