@@ -170,3 +170,9 @@ if (priceTable) {
     }
   });
 }
+
+// Версия для слабовидящих
+const poorVisionBtn = document.querySelector("#js-change-version");
+poorVisionBtn.addEventListener("click", () => {
+
+});
