@@ -1,0 +1,20 @@
+mixin doctorPage(id)
+  - var doctor = staff[id]
+
+  section.section.doctor-info
+    .container
+      h1.section__title.doctor-info__title
+        | #{doctor.surname} #{doctor.name} #{doctor.patronym}
+      .doctor-info__position
+        | #{doctor.rank}
+      .doctor-info__row
+        figure.doctor-info__photo
+          img(src=`@img/staff/${doctor.id}.jpg`, alt=`${doctor.surname} ${doctor.name} ${doctor.patronym}`)
+        .doctor-info__text
+          h2.doctor-info__subtitle
+            | Обучение и квалификация
+          ul.doctor-info__education__list
+            each certificate in doctor.certificates
+              li.doctor-info__education-item
+                .doctor-info__education-year #{certificate.year} г.
+                .doctor-info__education-description #{certificate.text}
