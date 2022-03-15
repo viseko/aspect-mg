@@ -1,8 +1,6 @@
 //- Шаблон слайда
 mixin slide(data)
   .swiper-slide.reviews-slider__slide
-    figure.review-slider__photo
-      img(src=`${data.photo[0]}`, srcset=`${data.photo[1]} 2x` width="90" height="90" alt=`Фото: ${data.name}`)
     b.reviews-slider__name #{data.name}
     .reviews-slider__text
       | #{data.text}
