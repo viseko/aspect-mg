@@ -1075,7 +1075,6 @@
     time += 24 * 60 * 60 * 1000;
     now.setTime(time);
     document.cookie = "bvi_".concat(name, "=").concat(value, ",path=/,expires=").concat(now.toUTCString(), ",domain=").concat(location.host);
-    console.log("lol");
   };
 
   var getCookie = function getCookie() {
