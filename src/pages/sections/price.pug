@@ -1,3 +1,16 @@
+mixin serviceItem(item, deep)
+  if (deep === true)
+    - var className = "price-table__item price-table__item--deep"
+  else
+    - var className = "price-table__item"
+  li(class=className)
+    .price-table__item-name #{item.name}
+      if (item.details)
+        ul.price-table__details
+          each detail in item.details
+            li=detail
+    .price-table__item-price #{item.price}р.
+
 section.section
   .container
     h1.section__title Услуги и цены
@@ -24,9 +37,7 @@ section.section
           ul.price-table__sublist
             each serviceItem in serviceType.details
               if serviceItem.price
-                li.price-table__item
-                  .price-table__item-name #{serviceItem.name}
-                  .price-table__item-price #{serviceItem.price}р.
+                +serviceItem(serviceItem, false)
               else
                 li.price-table__item.price-table__item--sublist
                   button.price-table__item-name.price-table__btn-show #{serviceItem.name}
@@ -34,6 +45,4 @@ section.section
                       +svgSprite("arrow-right", 12, 20)
                   ul.price-table__sublist
                     each item in serviceItem.details
-                      li.price-table__item.price-table__item--deep
-                        .price-table__item-name #{item.name}
-                        .price-table__item-price #{item.price}р.
+                      +serviceItem(item, true)

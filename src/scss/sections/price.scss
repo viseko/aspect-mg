@@ -39,7 +39,7 @@ $table-size: 900px;
 .price-table__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border-bottom: 1px solid $cl-silver;
   transition: 0.2s;
 
@@ -113,8 +113,23 @@ $table-size: 900px;
   border: 0;
   transform: rotate(90deg);
 
-  ._open > & {
+  ._open > button > & {
     transform: rotate(-90deg);
+  }
+}
+
+.price-table__details {
+  margin: 0;
+  padding: 20px 0 0 30px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 
