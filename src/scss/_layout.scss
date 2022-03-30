@@ -19,6 +19,10 @@
   background-color: transparent;
   transition: background-color 0.5s;
   pointer-events: none;
+
+  .bvi-active & {
+    display: none;
+  }
 }
 
 .container {

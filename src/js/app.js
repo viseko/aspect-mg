@@ -1,3 +1,4 @@
+
 // import Swiper from "swiper";
 import * as flsFunctions from "./modules/functions.js";
 import {adaptiveMove} from "./modules/adaptive-move.js";
@@ -170,9 +171,3 @@ if (priceTable) {
     }
   });
 }
-
-// Версия для слабовидящих
-const poorVisionBtn = document.querySelector("#js-change-version");
-poorVisionBtn.addEventListener("click", () => {
-
-});
