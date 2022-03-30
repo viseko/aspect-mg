@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="icon" href="favicon.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bvi.min.css">
   </head>
   <body>
     <div class="page">
@@ -26,7 +27,7 @@
                       <use xlink:href="img/icons/icons.svg#geo"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text">ул. Краснодарская, 17а</div>
+                <div class="page-header__contact-text">ул. Краснодарская, 17а, пом. 3</div>
               </div>
               <div class="page-header__contact-item">
                 <div class="page-header__contact-icon">
@@ -51,10 +52,10 @@
               <div class="page-header__contact-item" data-am=".page-header__contacts--address/(max-width: 800px)">
                 <div class="page-header__contact-icon">
                     <svg width="18" height="18">
-                      <use xlink:href="img/icons/icons.svg#instagram"></use>
+                      <use xlink:href="img/icons/icons.svg#vk"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text"><a href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">aspect_medical_group</a></div>
+                <div class="page-header__contact-text"><a href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">Группа в ВК</a></div>
               </div>
             </div>
             <button class="page-header__mobile-menu-btn" id="js-menu-btn">
@@ -81,7 +82,7 @@
               <li class="breadcrumbs__item"><span>Соломахина А. С.</span></li>
             </ul>
             <div class="page-header__change-version">
-              <button class="page-header__change-version-btn" id="js-change-version">
+              <button class="page-header__change-version-btn bvi-open">
                   <svg width="22" height="15">
                     <use xlink:href="img/icons/icons.svg#eye"></use>
                   </svg><span>Версия для слабовидящих</span>
@@ -90,56 +91,68 @@
           </div>
         </div>
       </header>
-      <section class="section doctor-info">
-        <div class="container">
-          <h1 class="section__title doctor-info__title">Соломахина Алла Станиславовна</h1>
-          <div class="doctor-info__position">Главный врач, врач-стоматолог, детский стоматолог</div>
-          <div class="doctor-info__row">
-            <figure class="doctor-info__photo"><img src="img/staff/solomakhina.jpg" alt="Соломахина Алла Станиславовна"></figure>
-            <div class="doctor-info__text">
-              <p class="doctor-info__specialisation">Специализируется на терапевтической стоматологии<br>Стаж работы:&nbsp;<span>10</span>&nbsp;лет</p>
-              <h2 class="doctor-info__subtitle">Обучение и квалификация</h2>
-              <ul class="doctor-info__education__list">
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2007 год</div>
-                  <div class="doctor-info__education-description">Диплом специалиста Читинской государственной медицинской академии Федерального агентства по здравоохранению и социальному развитию по специальности "Стоматология", квалификации "Врач-стоматолог".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2007 год</div>
-                  <div class="doctor-info__education-description">Диплом специалиста Читинской государственной медицинской академии Федерального агентства по здравоохранению и социальному развитию по специальности "Стоматология", квалификации "Врач-стоматолог".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2007 год</div>
-                  <div class="doctor-info__education-description">Диплом специалиста Читинской государственной медицинской академии Федерального агентства по здравоохранению и социальному развитию по специальности "Стоматология", квалификации "Врач-стоматолог".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2007 год</div>
-                  <div class="doctor-info__education-description">Диплом специалиста Читинской государственной медицинской академии Федерального агентства по здравоохранению и социальному развитию по специальности "Стоматология", квалификации "Врач-стоматолог".</div>
-                </li>
-              </ul>
-              <h2 class="doctor-info__subtitle">Опыт работы</h2>
-              <ul class="doctor-info__education__list">
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2005 – 2007 годы</div>
-                  <div class="doctor-info__education-description">Работа ассистентом врача-стоматолога в стоматологической клинике "Дента Люкс".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2005 – 2007 годы</div>
-                  <div class="doctor-info__education-description">Работа ассистентом врача-стоматолога в стоматологической клинике "Дента Люкс".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2005 – 2007 годы</div>
-                  <div class="doctor-info__education-description">Работа ассистентом врача-стоматолога в стоматологической клинике "Дента Люкс".</div>
-                </li>
-                <li class="doctor-info__education-item">
-                  <div class="doctor-info__education-year">2005 – 2007 годы</div>
-                  <div class="doctor-info__education-description">Работа ассистентом врача-стоматолога в стоматологической клинике "Дента Люкс".</div>
-                </li>
-              </ul>
+        <section class="section doctor-info">
+          <div class="container">
+            <h1 class="section__title doctor-info__title">Соломахина Алла Станиславовна</h1>
+            <div class="doctor-info__position">Главный врач, стоматолог-ортопед, стоматолог общей практики</div>
+            <div class="doctor-info__row">
+              <figure class="doctor-info__photo"><img src="img/staff/solomakhina.jpg" alt="Соломахина Алла Станиславовна"></figure>
+              <div class="doctor-info__text">
+                <h2 class="doctor-info__subtitle">Обучение и квалификация</h2>
+                <ul class="doctor-info__education__list">
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2006 г.</div>
+                    <div class="doctor-info__education-description">Диплом о высшем образовании от 21.06.2006г. в ГОУ ВПО КрасГМА квалификации Врач по специальности «Стоматология»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2007 г.</div>
+                    <div class="doctor-info__education-description">Удостоверение о прохождении интернатуры в ГОУ ВПО КрасГМА по специальности «Стоматология»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2011 г.</div>
+                    <div class="doctor-info__education-description">Диплом о проф. переподготовке в ИПО ГОУ ВПО КрасГМУ им. проф. В. Ф. Войно-Ясенецкого от 09.02.2011г. по циклу «Стоматология ортопедическая»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2011 г.</div>
+                    <div class="doctor-info__education-description">Удостоверение о повышении квалификации в Омской государственной мед. академии от 16.04.2011г. по программе «Стоматология общей практики»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2015 г.</div>
+                    <div class="doctor-info__education-description">Диплом о проф. переподготовке в ФГБУО ВО ОмГМУ Минздрава России от 26.12.2015г. на право ведения профессиональной деятельности в сфере «Стоматология терапевтическая»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2016 г.</div>
+                    <div class="doctor-info__education-description">Диплом о проф. переподготовке в ФГБУО ВО ОмГМУ Минздрава России от 11.04.2016г. на право ведения профессиональной деятельности в сфере «Организация здравоохранения и общественное здоровье»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2016 г.</div>
+                    <div class="doctor-info__education-description">Удостоверение о повышении квалификации в ФГБУО ВО ОмГМУ Минздрава России от 07.05.2016г. по программе «Стоматология ортопедическая»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2018 г.</div>
+                    <div class="doctor-info__education-description">Сертификат специалиста о проф. переподготовке в ФГБУО ВО ОмГМУ Минздрава России от 10.11.2018г. по направлению «Стоматология общей практики»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2019 г.</div>
+                    <div class="doctor-info__education-description">Сертификат специалиста о проф. переподготовке в ФИЦ КНЦ СО РАН от 28.02.2019г. по направлению «Организация здравоохранения и общественное здоровье»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2020 г.</div>
+                    <div class="doctor-info__education-description">Сертификат специалиста о проф. переподготовке в ЧУ ДПО «Институт переподготовки и повышения квалификации специалистов здравоохранения» от 02.04.2020г. по направлению «Стоматология терапевтическая»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2020 г.</div>
+                    <div class="doctor-info__education-description">Сертификат специалиста о проф. переподготовке в ЧУ ДПО «Институт переподготовки и повышения квалификации специалистов здравоохранения» от 02.04.2020г. по направлению «Стоматология ортопедическая»</div>
+                  </li>
+                  <li class="doctor-info__education-item">
+                    <div class="doctor-info__education-year">2021 г.</div>
+                    <div class="doctor-info__education-description">Удостоверение о повышении квалификации в ООО УЦ МИР Энергия от 25.11.2021г. по программе «Актуальные аспекты профилактики COVID-19 в медицинских учреждениях»</div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <footer class="page__footer page-footer">
         <div class="container">
           <nav class="page-footer__nav">
@@ -151,12 +164,12 @@
             </ul>
           </nav>
           <div class="page-footer__contacts">
-            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а</p>
+            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а, пом. 3</p>
             <p><a href="tel:+7(391)267-34-51">+7(391)267-34-51</a>, <a href="tel:+7(902)951-19-11">+7(902)951-19-11</a></p>
-            <div class="social-links"><a class="social-links__link social-links__link--instagram" href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">
+            <div class="social-links"><a class="social-links__link social-links__link--vk" href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">
                   <svg width="21" height="21">
-                    <use xlink:href="img/icons/icons.svg#instagram"></use>
-                  </svg><span class="visually-hidden">https://www.instagram.com/aspect_medical_group/</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
+                    <use xlink:href="img/icons/icons.svg#vk"></use>
+                  </svg><span class="visually-hidden">https://vk.com/public211407145</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
                   <svg width="20" height="16">
                     <use xlink:href="img/icons/icons.svg#mail"></use>
                   </svg><span class="visually-hidden">aspektmedicalgroup@yandex.ru</span></a></div>
@@ -184,4 +197,6 @@
     </div>
   </body>
   <script src="js/app.min.js"></script>
+  <script src="js/bvi.js"></script>
+  <script>new isvek.Bvi();</script>
 </html>

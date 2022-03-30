@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="icon" href="favicon.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bvi.min.css">
   </head>
   <body>
     <div class="page">
@@ -26,7 +27,7 @@
                       <use xlink:href="img/icons/icons.svg#geo"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text">ул. Краснодарская, 17а</div>
+                <div class="page-header__contact-text">ул. Краснодарская, 17а, пом. 3</div>
               </div>
               <div class="page-header__contact-item">
                 <div class="page-header__contact-icon">
@@ -51,10 +52,10 @@
               <div class="page-header__contact-item" data-am=".page-header__contacts--address/(max-width: 800px)">
                 <div class="page-header__contact-icon">
                     <svg width="18" height="18">
-                      <use xlink:href="img/icons/icons.svg#instagram"></use>
+                      <use xlink:href="img/icons/icons.svg#vk"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text"><a href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">aspect_medical_group</a></div>
+                <div class="page-header__contact-text"><a href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">Группа в ВК</a></div>
               </div>
             </div>
             <button class="page-header__mobile-menu-btn" id="js-menu-btn">
@@ -81,7 +82,7 @@
               <li class="breadcrumbs__item"><span>Услуги и цены</span></li>
             </ul>
             <div class="page-header__change-version">
-              <button class="page-header__change-version-btn" id="js-change-version">
+              <button class="page-header__change-version-btn bvi-open">
                   <svg width="22" height="15">
                     <use xlink:href="img/icons/icons.svg#eye"></use>
                   </svg><span>Версия для слабовидящих</span>
@@ -113,82 +114,129 @@
                 </div>
               </button>
               <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-ортодонта первичный</div>
-                  <div class="price-table__item-price">400р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-ортодонта повторный</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога первичный</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога повторный</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-терапевта первичный</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-терапевта повторный</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-хирурга первичный</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-хирурга повторный</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Первичная диагностика</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Расширенная диагностика</div>
-                  <div class="price-table__item-price">2000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Радиовизиография</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Определение прикуса</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Исследование на диагностических моделях челюстей</div>
-                  <div class="price-table__item-price">1000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Определение вида смыкания зубов с помощью лицевой дуги</div>
-                  <div class="price-table__item-price">1000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Исследование зубодесневых карманов с помощью пародонтологического зонда</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Функциональные жевательные пробы</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Определение индексов гигиены полости рта</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-ортодонта первичный
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-ортодонта повторный
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога первичный
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога повторный
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-терапевта первичный
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-терапевта повторный
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-ортопеда первичный
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-ортопеда повторный
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-хирурга первичный
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Прием (осмотр, консультация) врача-стоматолога-хирурга повторный
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Первичная диагностика
+                          <ul class="price-table__details">
+                            <li>Сбор анамнеза и жалоб при патологии полости рта</li>
+                            <li>Внешний осмотр челюстно-лицевой области</li>
+                            <li>Визуальное исследование при патологии полости рта</li>
+                            <li>Пальпация органов полости рта</li>
+                            <li>Перкуссия при патологии полости рта</li>
+                            <li>Осмотр полости рта с помощью дополнительных инструментов</li>
+                            <li>Исследование кариозных полостей с использованием стоматологического зонда</li>
+                            <li>Перкуссия зубов</li>
+                            <li>Определение степени патологической подвижности зубов</li>
+                            <li>Термодиагностика зуба</li>
+                            <li>Исследование зубодесневых карманов с помощью пародонтологического зонда</li>
+                          </ul>
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Расширенная диагностика
+                          <ul class="price-table__details">
+                            <li>Прием (осмотр, консультация) врача-стоматолога повторный</li>
+                            <li>Сбор анамнеза и жалоб при патологии полости рта, включая черепно-челюстно-лицевой области</li>
+                            <li>Визуальное исследование при патологии полости рта, включая черепно-челюстно-лицевой области</li>
+                            <li>Пальпация при патологии полости рта, включая черепно-челюстно-лицевой области</li>
+                            <li>Перкуссия при патологии полости рта, включая черепно-челюстно-лицевой области</li>
+                            <li>Пальпация челюстно-лицевой области</li>
+                            <li>Определение степени открывания рта и ограничения подвижности нижней челюсти</li>
+                            <li>Перкуссия зубов</li>
+                            <li>Определение степени патологической подвижности зубов</li>
+                            <li>Описание и интерпретация рентгенографических изображений</li>
+                            <li>Антропометрические исследования (медицинское фотографирование)</li>
+                            <li>Исследование на диагностических моделях челюстей</li>
+                            <li>Определение прикуса</li>
+                          </ul>
+                        </div>
+                        <div class="price-table__item-price">2000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Радиовизиография
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Определение прикуса
+                        </div>
+                        <div class="price-table__item-price">200р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Исследование на диагностических моделях челюстей
+                        </div>
+                        <div class="price-table__item-price">1000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Определение вида смыкания зубов с помощью лицевой дуги
+                        </div>
+                        <div class="price-table__item-price">1000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Исследование зубодесневых карманов с помощью пародонтологического зонда
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Функциональные жевательные пробы
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Определение индексов гигиены полости рта
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
               </ul>
             </li>
             <li class="price-table__item price-table__item--sublist price-table__item--top">
@@ -200,34 +248,41 @@
                 </div>
               </button>
               <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Аппликационная анестезия</div>
-                  <div class="price-table__item-price">100р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Инфильтрационная анестезия</div>
-                  <div class="price-table__item-price">350р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Проводниковая анестезия</div>
-                  <div class="price-table__item-price">400р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Инъекционное введение лекарственных препаратов в челюстно-лицевую область</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Назначение лекарственных препаратов при заболеваниях полости рта и зубов</div>
-                  <div class="price-table__item-price">100р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Внутримышечное введение лекарственных препаратов</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Внутривенное введение лекарственных препаратов</div>
-                  <div class="price-table__item-price">500р.</div>
-                </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Аппликационная анестезия
+                        </div>
+                        <div class="price-table__item-price">100р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Инфильтрационная анестезия
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Проводниковая анестезия
+                        </div>
+                        <div class="price-table__item-price">400р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Инъекционное введение лекарственных препаратов в челюстно-лицевую область
+                        </div>
+                        <div class="price-table__item-price">200р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Назначение лекарственных препаратов при заболеваниях полости рта и зубов
+                        </div>
+                        <div class="price-table__item-price">100р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Внутримышечное введение лекарственных препаратов
+                        </div>
+                        <div class="price-table__item-price">200р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Внутривенное введение лекарственных препаратов
+                        </div>
+                        <div class="price-table__item-price">500р.</div>
+                      </li>
               </ul>
             </li>
             <li class="price-table__item price-table__item--sublist price-table__item--top">
@@ -248,86 +303,117 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Сошлифовывание твердых тканей зуба при лечении кариеса и его осложнений</div>
-                      <div class="price-table__item-price">200р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса I класса по Блэк</div>
-                      <div class="price-table__item-price">2500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса III и VI класса по Блэк</div>
-                      <div class="price-table__item-price">3000р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса II, V и IV класса по Блэк и клиновидного дефекта</div>
-                      <div class="price-table__item-price">2500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба пломбой в случае разрушения более 1/2 коронковой части зуба</div>
-                      <div class="price-table__item-price">3500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса III и VI  класса по Блэк с воспроизведением индивидуальной эстетики и формы зуба</div>
-                      <div class="price-table__item-price">4700р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Фиксация внутриканального штифта/вкладки</div>
-                      <div class="price-table__item-price">400р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Восстановление зуба вкладками, виниром, полукоронкой из фотополимерного материала прямым методом</div>
-                      <div class="price-table__item-price">4000р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Лечение осложнений кариеса (эндодонтическое лечение  корневых каналов) однокорневого зуба, включает</div>
-                      <div class="price-table__item-price">От 4000р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Экстирпация пульпы</div>
-                      <div class="price-table__item-price">400р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Инструментальная и медикаментозная обработка корневого канала с временным вложением гидроокиси кальция</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Инструментальная и медикаментозная обработка плохо проходимого корневого канала с временным вложением гидроокиси кальция</div>
-                      <div class="price-table__item-price">800р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Временное пломбирование лекарственным препаратом корневого канала</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Ультразвуковое расширение корневого канала зуба</div>
-                      <div class="price-table__item-price">200р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Пломбирование корневого канала зуба методом латеральной конденсации гуттаперчи</div>
-                      <div class="price-table__item-price">1600р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Пломбирование корневого канала зуба методом вертикальной конденсации горячей гуттаперчи или системой &quot;Термафил&quot;, &quot;Софт-Кор&quot;, ProRoot MTA</div>
-                      <div class="price-table__item-price">2500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Закрытие перфорации стенки корневого канала  (без учета стоимости материала)</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Распломбировка корневого канала ранее леченого пастой</div>
-                      <div class="price-table__item-price">550р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Распломбировка корневого канала ранее леченого фосфат цементом/резорцин-формальдегидным методом</div>
-                      <div class="price-table__item-price">800р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Удаление внутриканального штифта/вкладки</div>
-                      <div class="price-table__item-price">1000р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Сошлифовывание твердых тканей зуба при лечении кариеса и его осложнений
+                            </div>
+                            <div class="price-table__item-price">200р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса I класса по Блэк
+                            </div>
+                            <div class="price-table__item-price">3000р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса III и VI класса по Блэк
+                            </div>
+                            <div class="price-table__item-price">3500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса II, V и IV класса по Блэк и клиновидного дефекта
+                            </div>
+                            <div class="price-table__item-price">3000р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбой в случае разрушения более 1/2 коронковой части зуба
+                            </div>
+                            <div class="price-table__item-price">4000р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбой при лечении кариеса III и VI  класса по Блэк с воспроизведением индивидуальной эстетики и формы зуба
+                            </div>
+                            <div class="price-table__item-price">4500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба пломбировочными материалами с использованием анкерных штифтов из стекловолокна
+                            </div>
+                            <div class="price-table__item-price">4700р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Фиксация внутриканального штифта/вкладки
+                            </div>
+                            <div class="price-table__item-price">450р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Восстановление зуба вкладками, виниром, полукоронкой из фотополимерного материала прямым методом
+                            </div>
+                            <div class="price-table__item-price">5000р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Лечение осложнений кариеса (эндодонтическое лечение  корневых каналов) однокорневого зуба, включает
+                              <ul class="price-table__details">
+                                <li>Экстирпация пульпы</li>
+                                <li>Инструментальная и медикаментозная обработка корневого канала</li>
+                                <li>Пломбирование корневого канала зуба</li>
+                                <li>Восстановление зуба пломбой после эндодонтического лечения</li>
+                              </ul>
+                            </div>
+                            <div class="price-table__item-price">От 6000р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Экстирпация пульпы
+                            </div>
+                            <div class="price-table__item-price">400р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Инструментальная и медикаментозная обработка корневого канала с временным вложением гидроокиси кальция
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Инструментальная и медикаментозная обработка плохо проходимого корневого канала с временным вложением гидроокиси кальция
+                            </div>
+                            <div class="price-table__item-price">800р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Временное пломбирование лекарственным препаратом корневого канала
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Ультразвуковое расширение корневого канала зуба
+                            </div>
+                            <div class="price-table__item-price">200р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Пломбирование корневого канала зуба методом латеральной конденсации гуттаперчи
+                            </div>
+                            <div class="price-table__item-price">1600р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Пломбирование корневого канала зуба методом вертикальной конденсации горячей гуттаперчи или системой &quot;Термафил&quot;, &quot;Софт-Кор&quot;, ProRoot MTA
+                            </div>
+                            <div class="price-table__item-price">2500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Закрытие перфорации стенки корневого канала  (без учета стоимости материала)
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Распломбировка корневого канала ранее леченого пастой
+                            </div>
+                            <div class="price-table__item-price">550р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Распломбировка корневого канала ранее леченого фосфат цементом/резорцин-формальдегидным методом
+                            </div>
+                            <div class="price-table__item-price">800р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Удаление внутриканального штифта/вкладки
+                            </div>
+                            <div class="price-table__item-price">1000р.</div>
+                          </li>
                   </ul>
                 </li>
                 <li class="price-table__item price-table__item--sublist">
@@ -339,10 +425,11 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Наложение временной пломбы</div>
-                      <div class="price-table__item-price">200р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Наложение временной пломбы
+                            </div>
+                            <div class="price-table__item-price">200р.</div>
+                          </li>
                   </ul>
                 </li>
                 <li class="price-table__item price-table__item--sublist">
@@ -354,34 +441,41 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Профессиональная гигиена полости рта комбинированным методом (ультразвук+аир-флоу+полировка эмали) в области одной челюсти с ультразвуковым удалением зубных отложений, обработкой эйр-флоу и полировкой эмали</div>
-                      <div class="price-table__item-price">1500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Ультразвуковая обработка патологических зубодесневых карманов (1 зуб)</div>
-                      <div class="price-table__item-price">100р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Ультразвуковое удаление наддесневых и поддесневых зубных отложений в области одного зуба</div>
-                      <div class="price-table__item-price">150р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Запечатывание фиссуры зуба герметиком</div>
-                      <div class="price-table__item-price">1200р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Глубокое фторирование твердых тканей зубов (1 зуб) </div>
-                      <div class="price-table__item-price">200р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Глубокое фторирование твердых тканей зубов при подготовке эмали зубов к лечению с помощью брекет-системы и реабилитация после с использованием индивидуальных капп, снятие генерализованной гиперчувствительности (1 челюсть)</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Введение лекарственных препаратов в парадонтальный карман</div>
-                      <div class="price-table__item-price">200р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Профессиональная гигиена полости рта комбинированным методом (ультразвук+аир-флоу+полировка эмали) в области одной челюсти с ультразвуковым удалением зубных отложений, обработкой эйр-флоу и полировкой эмали
+                            </div>
+                            <div class="price-table__item-price">1500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Ультразвуковая обработка патологических зубодесневых карманов (1 зуб)
+                            </div>
+                            <div class="price-table__item-price">100р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Ультразвуковое удаление наддесневых и поддесневых зубных отложений в области одного зуба
+                            </div>
+                            <div class="price-table__item-price">150р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Запечатывание фиссуры зуба герметиком
+                            </div>
+                            <div class="price-table__item-price">1500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Глубокое фторирование твердых тканей зубов (1 зуб) 
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Глубокое фторирование твердых тканей зубов при подготовке эмали зубов к лечению с помощью брекет-системы и реабилитация после с использованием индивидуальных капп, снятие генерализованной гиперчувствительности (1 челюсть)
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Введение лекарственных препаратов в парадонтальный карман
+                            </div>
+                            <div class="price-table__item-price">400р.</div>
+                          </li>
                   </ul>
                 </li>
                 <li class="price-table__item price-table__item--sublist">
@@ -393,10 +487,11 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Временное шинирование при заболеваниях пародонта</div>
-                      <div class="price-table__item-price">От 5000р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Временное шинирование при заболеваниях пародонта
+                            </div>
+                            <div class="price-table__item-price">От 7000р.</div>
+                          </li>
                   </ul>
                 </li>
               </ul>
@@ -410,58 +505,71 @@
                 </div>
               </button>
               <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Исследование на диагностических моделях челюстей с восковой моделировкой будущей ортопедической конструкции с целью планирования препарирования, эстетики и функции (1 единица) </div>
-                  <div class="price-table__item-price">800р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Сошлифовывание твердых тканей зуба для последующего восстановления вкладкой, накладкой, полукоронкой, коронкой, виниром</div>
-                  <div class="price-table__item-price">500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой временной (пластмассовой)</div>
-                  <div class="price-table__item-price">600р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба металлической стандартной коронкой</div>
-                  <div class="price-table__item-price">2200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой постоянной цельнометаллической</div>
-                  <div class="price-table__item-price">4500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой постоянной металлокерамической </div>
-                  <div class="price-table__item-price">8000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой постоянной безметалловой из диоксида циркония </div>
-                  <div class="price-table__item-price">15000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой постоянной безметалловой цельнокерамической </div>
-                  <div class="price-table__item-price">15000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба коронкой  постоянной  пластмассовой</div>
-                  <div class="price-table__item-price">3500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба вкладкой, виниром, полукоронкой ( безметаловой цельнокерамической)</div>
-                  <div class="price-table__item-price">15000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба с использованием цельнолитой культевой вкладки</div>
-                  <div class="price-table__item-price">3000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление зуба с использованием цельнокерамической культевой вкладки</div>
-                  <div class="price-table__item-price">5500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Изготовление окклюзионной накладки в мостовидном протезе</div>
-                  <div class="price-table__item-price">800р.</div>
-                </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Исследование на диагностических моделях челюстей с восковой моделировкой будущей ортопедической конструкции с целью планирования препарирования, эстетики и функции (1 единица) 
+                        </div>
+                        <div class="price-table__item-price">800р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Сошлифовывание твердых тканей зуба для последующего восстановления вкладкой, накладкой, полукоронкой, коронкой, виниром
+                        </div>
+                        <div class="price-table__item-price">500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой временной (пластмассовой)
+                        </div>
+                        <div class="price-table__item-price">900р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба металлической стандартной коронкой
+                        </div>
+                        <div class="price-table__item-price">2500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой постоянной цельнометаллической
+                        </div>
+                        <div class="price-table__item-price">6000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой постоянной металлокерамической 
+                        </div>
+                        <div class="price-table__item-price">10500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой постоянной безметалловой из диоксида циркония 
+                        </div>
+                        <div class="price-table__item-price">19000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой постоянной безметалловой цельнокерамической 
+                        </div>
+                        <div class="price-table__item-price">20000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба коронкой  постоянной  пластмассовой
+                        </div>
+                        <div class="price-table__item-price">4500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба вкладкой, виниром, полукоронкой ( безметаловой цельнокерамической)
+                        </div>
+                        <div class="price-table__item-price">20000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба с использованием цельнолитой культевой вкладки
+                        </div>
+                        <div class="price-table__item-price">3000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Восстановление зуба с использованием цельнокерамической культевой вкладки
+                        </div>
+                        <div class="price-table__item-price">7500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Изготовление окклюзионной накладки в мостовидном протезе
+                        </div>
+                        <div class="price-table__item-price">800р.</div>
+                      </li>
               </ul>
             </li>
             <li class="price-table__item price-table__item--sublist price-table__item--top">
@@ -473,42 +581,46 @@
                 </div>
               </button>
               <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами (1 челюсть)</div>
-                  <div class="price-table__item-price">19000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами с армированием (1 челюсть)</div>
-                  <div class="price-table__item-price">19500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование зубов полными съемными пластиночными протезами (1 челюсть)</div>
-                  <div class="price-table__item-price">18000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование зубов полными съемными пластиночными протезами с армированием</div>
-                  <div class="price-table__item-price">19500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование съемными бюгельными протезами с кламмерной фиксацией (1 челюсть)</div>
-                  <div class="price-table__item-price">30000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование съемными бюгельными протезами с замковой фиксацией (1 челюсть)</div>
-                  <div class="price-table__item-price">35000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Постоянное шинирование цельнолитыми съемными конструкциями при заболеваниях пародонта (шинирующий бюгель на 1 челюсть)</div>
-                  <div class="price-table__item-price">30000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами для временного замещения 1-3 отсутствующих зубов (иммедиат-протез)</div>
-                  <div class="price-table__item-price">8000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами для временного замещения 4-5 отсутствующих зубов (иммедиат-протез)</div>
-                  <div class="price-table__item-price">10000р.</div>
-                </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами (1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">21000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами с армированием (1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">23000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование зубов полными съемными пластиночными протезами (1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">20000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование зубов полными съемными пластиночными протезами с армированием
+                        </div>
+                        <div class="price-table__item-price">23000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование съемными бюгельными протезами с кламмерной фиксацией (1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">35000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование съемными бюгельными протезами с замковой фиксацией (1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">42000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Постоянное шинирование цельнолитыми съемными конструкциями при заболеваниях пародонта (шинирующий бюгель на 1 челюсть)
+                        </div>
+                        <div class="price-table__item-price">35000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Протезирование частичными съемными пластиночными протезами для временного замещения 1-3 отсутствующих зубов (иммедиат-протез)
+                        </div>
+                        <div class="price-table__item-price">9000р.</div>
+                      </li>
               </ul>
             </li>
             <li class="price-table__item price-table__item--sublist price-table__item--top">
@@ -520,58 +632,71 @@
                 </div>
               </button>
               <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Снятие несъемной ортопедической конструкции (1 единица)</div>
-                  <div class="price-table__item-price">300р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Снятие несъемной ортопедической конструкции временной (1 единица)</div>
-                  <div class="price-table__item-price">100р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Фиксация на постоянный цемент несъемных ортопедических конструкций (1 единица)</div>
-                  <div class="price-table__item-price">400р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Фиксация на временный цемент несъемных ортопедических конструкций (1 единица)</div>
-                  <div class="price-table__item-price">100р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Коррекция прикуса с использованием съемных и несъемных  ортопедических конструкций </div>
-                  <div class="price-table__item-price">От 15000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Снятие оттиска с одной челюсти альгинатным слепочным  материалом</div>
-                  <div class="price-table__item-price">400р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Снятие оттиска с одной челюсти С силиконовым слепочным  материалом</div>
-                  <div class="price-table__item-price">600р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Снятие оттиска с одной челюсти А силиконовым слепочным  материалом</div>
-                  <div class="price-table__item-price">800р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Перебазировка съемного протеза лабораторным методом</div>
-                  <div class="price-table__item-price">3000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Приварка кламмера</div>
-                  <div class="price-table__item-price">1500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Приварка зуба</div>
-                  <div class="price-table__item-price">1500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Починка перелома базиса самотвердеющей пластмассой</div>
-                  <div class="price-table__item-price">2000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Изготовление эластической прокладки (лабораторный метод)</div>
-                  <div class="price-table__item-price">5000р.</div>
-                </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Снятие несъемной ортопедической конструкции (1 единица)
+                        </div>
+                        <div class="price-table__item-price">300р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Снятие несъемной ортопедической конструкции временной (1 единица)
+                        </div>
+                        <div class="price-table__item-price">100р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Фиксация на постоянный цемент несъемных ортопедических конструкций (1 единица)
+                        </div>
+                        <div class="price-table__item-price">500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Фиксация на временный цемент несъемных ортопедических конструкций (1 единица)
+                        </div>
+                        <div class="price-table__item-price">100р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Коррекция прикуса с использованием съемных и несъемных  ортопедических конструкций 
+                        </div>
+                        <div class="price-table__item-price">От 15000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Снятие оттиска с одной челюсти альгинатным слепочным  материалом
+                        </div>
+                        <div class="price-table__item-price">500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Снятие оттиска с одной челюсти С силиконовым слепочным  материалом
+                        </div>
+                        <div class="price-table__item-price">700р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Снятие оттиска с одной челюсти А силиконовым слепочным  материалом
+                        </div>
+                        <div class="price-table__item-price">900р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Перебазировка съемного протеза лабораторным методом
+                        </div>
+                        <div class="price-table__item-price">4000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Приварка кламмера
+                        </div>
+                        <div class="price-table__item-price">2000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Приварка зуба
+                        </div>
+                        <div class="price-table__item-price">2500р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Починка перелома базиса самотвердеющей пластмассой
+                        </div>
+                        <div class="price-table__item-price">2000р.</div>
+                      </li>
+                      <li class="price-table__item">
+                        <div class="price-table__item-name">Изготовление эластической прокладки (лабораторный метод)
+                        </div>
+                        <div class="price-table__item-price">От 4000р.</div>
+                      </li>
               </ul>
             </li>
             <li class="price-table__item price-table__item--sublist price-table__item--top">
@@ -592,42 +717,51 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Операция удаления постоянного зуба простое</div>
-                      <div class="price-table__item-price">1500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Операция удаления постоянного зуба сложное с разъединением корней</div>
-                      <div class="price-table__item-price">2200р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Операция удаления непрорезовавшегося, дистопированного или сверхкомплектного зуба</div>
-                      <div class="price-table__item-price">От 2500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Лечение перикоронита (промывание, рассечение и/или иссечение капюшона)</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Остановка луночного  кровотечения без наложения швов с использованием гемостатических материалов</div>
-                      <div class="price-table__item-price">400р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Наложение шва на слизистую оболочку рта</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Гингивотомия в области одного зуба </div>
-                      <div class="price-table__item-price">300р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Вскрытие подслизистого или поднадкостничного очага воспаления в полости рта</div>
-                      <div class="price-table__item-price">400р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Отсроченный кюретаж  лунки удаленного зуба</div>
-                      <div class="price-table__item-price">500р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Операция удаления постоянного зуба простое
+                            </div>
+                            <div class="price-table__item-price">1500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Операция удаления постоянного зуба сложное с разъединением корней
+                            </div>
+                            <div class="price-table__item-price">2200р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Операция удаления непрорезовавшегося, дистопированного или сверхкомплектного зуба
+                            </div>
+                            <div class="price-table__item-price">От 2500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Лечение перикоронита (промывание, рассечение и/или иссечение капюшона)
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Остановка луночного  кровотечения без наложения швов с использованием гемостатических материалов
+                            </div>
+                            <div class="price-table__item-price">400р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Наложение шва на слизистую оболочку рта
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Гингивотомия в области одного зуба 
+                            </div>
+                            <div class="price-table__item-price">300р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Вскрытие подслизистого или поднадкостничного очага воспаления в полости рта
+                            </div>
+                            <div class="price-table__item-price">400р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Отсроченный кюретаж  лунки удаленного зуба
+                            </div>
+                            <div class="price-table__item-price">500р.</div>
+                          </li>
                   </ul>
                 </li>
                 <li class="price-table__item price-table__item--sublist">
@@ -639,74 +773,17 @@
                     </div>
                   </button>
                   <ul class="price-table__sublist">
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Перевязка, обработка раны после оперативных вмешательств</div>
-                      <div class="price-table__item-price">300р.</div>
-                    </li>
-                    <li class="price-table__item price-table__item--deep">
-                      <div class="price-table__item-name">Снятие швов после оперативных вмешательств в области одного зуба</div>
-                      <div class="price-table__item-price">300р.</div>
-                    </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Перевязка, обработка раны после оперативных вмешательств
+                            </div>
+                            <div class="price-table__item-price">300р.</div>
+                          </li>
+                          <li class="price-table__item price-table__item--deep">
+                            <div class="price-table__item-name">Снятие швов после оперативных вмешательств в области одного зуба
+                            </div>
+                            <div class="price-table__item-price">300р.</div>
+                          </li>
                   </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="price-table__item price-table__item--sublist price-table__item--top">
-              <button class="price-table__item-name price-table__btn-show">Детский приём
-                <div class="price-table__item-arrow">
-                    <svg width="12" height="20">
-                      <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                    </svg>
-                </div>
-              </button>
-              <ul class="price-table__sublist">
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление временного зуба пломбой при лечении кариеса I, II , III, V, VI класса по Блэку с использованием стоматологических цементов</div>
-                  <div class="price-table__item-price">1500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Восстановление временного зуба пломбой при лечении кариеса I, II , III, V, VI класса по Блэку с использованием материалов из фотополимеров</div>
-                  <div class="price-table__item-price">2000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Наложение девитализирующей пасты</div>
-                  <div class="price-table__item-price">150р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Пульпотомия (ампутация коронковой пульпы) временного зуба</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Инструментальная и медикаментозная обработка хорошо проходимого корневого канала  временного зуба</div>
-                  <div class="price-table__item-price">500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Пломбирование корневого канала временного зуба пастой</div>
-                  <div class="price-table__item-price">500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Операция удаления временного зуба простое</div>
-                  <div class="price-table__item-price">500р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Операция удаления временного зуба сложное</div>
-                  <div class="price-table__item-price">1000р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Наложение временной пломбы</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Наложение  изолирующей прокладки</div>
-                  <div class="price-table__item-price">200р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Применение метода серебрения</div>
-                  <div class="price-table__item-price">150р.</div>
-                </li>
-                <li class="price-table__item">
-                  <div class="price-table__item-name">Лечение методом глубокой ампутации </div>
-                  <div class="price-table__item-price">1450р.</div>
                 </li>
               </ul>
             </li>
@@ -724,12 +801,12 @@
             </ul>
           </nav>
           <div class="page-footer__contacts">
-            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а</p>
+            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а, пом. 3</p>
             <p><a href="tel:+7(391)267-34-51">+7(391)267-34-51</a>, <a href="tel:+7(902)951-19-11">+7(902)951-19-11</a></p>
-            <div class="social-links"><a class="social-links__link social-links__link--instagram" href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">
+            <div class="social-links"><a class="social-links__link social-links__link--vk" href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">
                   <svg width="21" height="21">
-                    <use xlink:href="img/icons/icons.svg#instagram"></use>
-                  </svg><span class="visually-hidden">https://www.instagram.com/aspect_medical_group/</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
+                    <use xlink:href="img/icons/icons.svg#vk"></use>
+                  </svg><span class="visually-hidden">https://vk.com/public211407145</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
                   <svg width="20" height="16">
                     <use xlink:href="img/icons/icons.svg#mail"></use>
                   </svg><span class="visually-hidden">aspektmedicalgroup@yandex.ru</span></a></div>
@@ -757,4 +834,6 @@
     </div>
   </body>
   <script src="js/app.min.js"></script>
+  <script src="js/bvi.js"></script>
+  <script>new isvek.Bvi();</script>
 </html>

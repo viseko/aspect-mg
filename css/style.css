@@ -571,6 +571,9 @@ figure {
   transition: background-color 0.5s;
   pointer-events: none;
 }
+.bvi-active .page__overlay {
+  display: none;
+}
 
 .container {
   margin: 0 auto;
@@ -620,7 +623,7 @@ body {
   height: 71px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .logo {
     flex-direction: column;
   }
@@ -691,7 +694,7 @@ body {
   opacity: 0.3;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .nav-main {
     justify-content: space-between;
   }
@@ -750,25 +753,14 @@ body {
   width: 32px;
   margin-right: 10px;
   color: #FFF;
-  background-color: #fff;
+  background-color: #008CB8;
   border-radius: 10px;
   transition: background-image background-color 0.3s;
 }
 .social-links__link:last-child {
   margin-right: 0;
 }
-
-.social-links__link--instagram {
-  background-image: linear-gradient(-45deg, #CE2C74, #5A45BA);
-}
-.social-links__link--instagram:hover {
-  background-image: linear-gradient(-45deg, #da538f, #7b6ac8);
-}
-
-.social-links__link--mail {
-  background-color: #008CB8;
-}
-.social-links__link--mail:hover {
+.social-links__link:hover {
   background-color: #00b3eb;
 }
 
@@ -1046,7 +1038,7 @@ body {
   margin-right: auto;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .page-header__contacts--address {
     order: -1;
   }
@@ -1267,7 +1259,7 @@ body {
   width: 25% !important;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .control-organs__item {
     width: 300px !important;
   }
@@ -1282,6 +1274,42 @@ body {
     filter: grayscale(0);
   }
 }
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team__doctor {
+  margin-bottom: 20px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.team__photo {
+  margin-bottom: 15px;
+}
+.team__photo img {
+  border-radius: 50%;
+}
+
+.team__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1466AC;
+}
+
+.team__rank {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.team__link {
+  display: block;
+}
+
 .service__list {
   display: flex;
   flex-wrap: wrap;
@@ -1459,6 +1487,10 @@ body {
     max-width: 140px;
   }
 }
+.reviews {
+  padding-top: 50px;
+}
+
 .reviews__slider {
   margin-bottom: 20px;
 }
@@ -1480,12 +1512,11 @@ body {
 
 .reviews-slider {
   position: relative;
-  padding-top: 40px;
 }
 
 .reviews-slider__control-btn {
   position: absolute;
-  top: 130px;
+  top: 80px;
   border: 0;
   padding: 0;
   background: none;
@@ -1526,13 +1557,6 @@ body {
   font-family: Robotolight;
   background-color: #ECEFF0;
   border-radius: 10px;
-}
-
-.review-slider__photo {
-  position: absolute;
-  top: -75px;
-  width: 90px;
-  height: 90px;
 }
 
 .reviews-slider__name {
@@ -1581,10 +1605,6 @@ body {
 @media (max-width: 800px) {
   .reviews .container {
     padding: 0;
-  }
-
-  .reviews-slider {
-    padding-top: 80px;
   }
 
   .reviews-slider__container {
@@ -1738,7 +1758,7 @@ body {
 .price-table__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border-bottom: 1px solid #ECEFF0;
   transition: 0.2s;
 }
@@ -1805,8 +1825,21 @@ body {
   border: 0;
   transform: rotate(90deg);
 }
-._open > .price-table__item-arrow {
+._open > button > .price-table__item-arrow {
   transform: rotate(-90deg);
+}
+
+.price-table__details {
+  margin: 0;
+  padding: 20px 0 0 30px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+.price-table__details li {
+  margin-bottom: 10px;
+}
+.price-table__details li:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 900px) {
@@ -1877,6 +1910,7 @@ body {
   flex: 0 0 100px;
   font-weight: bold;
   margin-right: 15px;
+  padding-left: 20px;
 }
 
 .doctor-info__education-description {

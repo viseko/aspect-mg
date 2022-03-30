@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="icon" href="favicon.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bvi.min.css">
   </head>
   <body>
     <div class="page">
@@ -28,7 +29,7 @@
                       <use xlink:href="img/icons/icons.svg#geo"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text">ул. Краснодарская, 17а</div>
+                <div class="page-header__contact-text">ул. Краснодарская, 17а, пом. 3</div>
               </div>
               <div class="page-header__contact-item">
                 <div class="page-header__contact-icon">
@@ -53,10 +54,10 @@
               <div class="page-header__contact-item" data-am=".page-header__contacts--address/(max-width: 800px)">
                 <div class="page-header__contact-icon">
                     <svg width="18" height="18">
-                      <use xlink:href="img/icons/icons.svg#instagram"></use>
+                      <use xlink:href="img/icons/icons.svg#vk"></use>
                     </svg>
                 </div>
-                <div class="page-header__contact-text"><a href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">aspect_medical_group</a></div>
+                <div class="page-header__contact-text"><a href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">Группа в ВК</a></div>
               </div>
             </div>
             <button class="page-header__mobile-menu-btn" id="js-menu-btn">
@@ -79,7 +80,7 @@
         <div class="page-header__bottom">
           <div class="container">
             <div class="page-header__change-version">
-              <button class="page-header__change-version-btn" id="js-change-version">
+              <button class="page-header__change-version-btn bvi-open">
                   <svg width="22" height="15">
                     <use xlink:href="img/icons/icons.svg#eye"></use>
                   </svg><span>Версия для слабовидящих</span>
@@ -191,17 +192,14 @@
             </button>
             <div class="reviews-slider__container">
               <div class="swiper-wrapper">
-                      <div class="swiper-slide reviews-slider__slide">
-                        <figure class="review-slider__photo"><img src="img/reviews/photo1.png" srcset="img/reviews/photo1@2x.png 2x" width="90" height="90" alt="Фото: Пупкин Василий"></figure><b class="reviews-slider__name">Пупкин Василий</b>
-                        <div class="reviews-slider__text">Учитывая ключевые сценарии поведения, убеждённость некоторых оппонентов требует определения и уточнения переосмысления внешнеэкономических политик. Повседневная практика показывает, что базовый вектор развития позволяет оценить значение модели развития. Вот вам яркий пример современных тенденций - высококачественный прототип будущего проекта создаёт предпосылки для приоритизации разума над эмоциями. Лишь многие известные личности могут быть объединены в целые кластеры себе подобных.</div>
+                      <div class="swiper-slide reviews-slider__slide"><b class="reviews-slider__name">tulaev-vk</b>
+                        <div class="reviews-slider__text">Ходим в эту клинику всей семьёй лет 10 уже. Были на лечении и у Екатерины и у Аллы Станиславовны, и на консультации с ребетенком у ортодонта. Из плюсов - наличие семейных скидок и отсутствие навязывания не нужных процедур. Из минусов: маленький холл и переодически очень сложно записаться на удобное время.</div>
                       </div>
-                      <div class="swiper-slide reviews-slider__slide">
-                        <figure class="review-slider__photo"><img src="img/reviews/photo2.png" srcset="img/reviews/photo2@2x.png 2x" width="90" height="90" alt="Фото: Якушев Пётр"></figure><b class="reviews-slider__name">Якушев Пётр</b>
-                        <div class="reviews-slider__text">Идейные соображения высшего порядка, а также укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения направлений прогрессивного развития. Таким образом, высокое качество позиционных исследований создаёт предпосылки для дальнейших направлений развития. Не следует, однако, забывать, что курс на социально-ориентированный национальный проект говорит о возможностях переосмысления внешнеэкономических политик.</div>
+                      <div class="swiper-slide reviews-slider__slide"><b class="reviews-slider__name">Misha Zhuyko</b>
+                        <div class="reviews-slider__text">Приятная клиника, доброжелательные и грамотные специалисты. Все сделали быстро, и очень важно для меня безболезненно. Советую!</div>
                       </div>
-                      <div class="swiper-slide reviews-slider__slide">
-                        <figure class="review-slider__photo"><img src="img/reviews/photo3.png" srcset="img/reviews/photo3@2x.png 2x" width="90" height="90" alt="Фото: Панина Мария"></figure><b class="reviews-slider__name">Панина Мария</b>
-                        <div class="reviews-slider__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо модели развития. Также как укрепление и развитие внутренней структуры не даёт нам иного выбора, кроме определения поставленных обществом задач.</div>
+                      <div class="swiper-slide reviews-slider__slide"><b class="reviews-slider__name">Анна</b>
+                        <div class="reviews-slider__text">Лечили сыну 10 лет зубы у Аллы Станиславовны Быстро поставила 2 пломбы, спасибо за чуткость и заботу о ребенке, сын не напугался. Стоимость лечения средняя по городу, недорого 😊</div>
                       </div>
               </div>
             </div>
@@ -210,13 +208,30 @@
           <div class="reviews__buttons"><a class="btn reviews__btn" href="reviews.html">Все отзывы</a><a class="btn reviews__btn" href="https://krasnoyarsk.flamp.ru/addreview/70000001047638503">Написать</a></div>
         </div>
       </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Врачи клиники</h2>
+          <div class="team">
+            <div class="team__doctor">
+              <figure class="team__photo"><img src="img/staff/solomakhina-square.jpg" alt="" width="200"></figure>
+              <h2 class="team__name">Соломахина&nbsp;А. С.</h2>
+              <p class="team__rank">Главный врач</p><a class="btn team__link" href="solomakhina.html">Подробнее</a>
+            </div>
+            <div class="team__doctor">
+              <figure class="team__photo"><img src="img/staff/kovaleva-square.jpg" alt="" width="200"></figure>
+              <h2 class="team__name">Ковалёва&nbsp;Т. М.</h2>
+              <p class="team__rank">Врач стоматолог</p><a class="btn team__link" href="kovaleva.html">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section contacts">
         <h2 class="section__title contacts__title">Схема проезда</h2>
         <div class="container">
           <div class="contacts__content">
             <div class="contacts__list">
               <div class="contacts__row">
-                <p>г. Красноярск, ул. Краснодарская, 17а</p>
+                <p>г. Красноярск, ул. Краснодарская, 17а, пом. 3</p>
                 <div class="contacts__icon">
                     <svg width="11" height="16">
                       <use xlink:href="img/icons/icons.svg#geo"></use>
@@ -278,12 +293,12 @@
             </ul>
           </nav>
           <div class="page-footer__contacts">
-            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а</p>
+            <p>ООО “Аспект Медикал Груп”<br>г. Красноярск, ул. Краснодарская, 17а, пом. 3</p>
             <p><a href="tel:+7(391)267-34-51">+7(391)267-34-51</a>, <a href="tel:+7(902)951-19-11">+7(902)951-19-11</a></p>
-            <div class="social-links"><a class="social-links__link social-links__link--instagram" href="https://www.instagram.com/aspect_medical_group/" target="_blank" rel="noopener noreferrer">
+            <div class="social-links"><a class="social-links__link social-links__link--vk" href="https://vk.com/public211407145" target="_blank" rel="noopener noreferrer">
                   <svg width="21" height="21">
-                    <use xlink:href="img/icons/icons.svg#instagram"></use>
-                  </svg><span class="visually-hidden">https://www.instagram.com/aspect_medical_group/</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
+                    <use xlink:href="img/icons/icons.svg#vk"></use>
+                  </svg><span class="visually-hidden">https://vk.com/public211407145</span></a><a class="social-links__link social-links__link--mail" href="mailto:aspektmedicalgroup@yandex.ru">
                   <svg width="20" height="16">
                     <use xlink:href="img/icons/icons.svg#mail"></use>
                   </svg><span class="visually-hidden">aspektmedicalgroup@yandex.ru</span></a></div>
@@ -311,4 +326,6 @@
     </div>
   </body>
   <script src="js/app.min.js"></script>
+  <script src="js/bvi.js"></script>
+  <script>new isvek.Bvi();</script>
 </html>
