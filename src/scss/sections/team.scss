@@ -1,0 +1,36 @@
+.team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team__doctor {
+  margin-bottom: 20px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.team__photo {
+  margin-bottom: 15px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.team__name {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: $cl-darkblue;
+}
+
+.team__rank {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.team__link {
+  display: block;
+}

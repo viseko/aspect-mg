@@ -1,0 +1,12 @@
+section.section
+  .container
+    h2.section__title Врачи клиники
+
+    .team
+      each doctor in staff
+        .team__doctor
+          figure.team__photo
+            img(src="img/staff/"+doctor.id+"-square.jpg", alt="" width="200")
+          h2.team__name #{doctor.surname}&nbsp;#{doctor.name.slice(0,1)}. #{doctor.patronym.slice(0,1)}.
+          p.team__rank #{doctor.rankShort}
+          a.btn.team__link(href=`${doctor.id}.html`) Подробнее
