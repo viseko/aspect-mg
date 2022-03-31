@@ -138,7 +138,7 @@ if (priceTable) {
         timing(t) {
           return t;
         },
-        duration: Math.max(sublistHeight, 300),
+        duration: Math.max(300, Math.min(sublistHeight, 1000)),
 
         draw(progress) {
           sublist.style.height = sublistHeight * progress + "px";
@@ -157,7 +157,7 @@ if (priceTable) {
         timing(t) {
           return t;
         },
-        duration: Math.max(sublistHeight, 300),
+        duration: Math.max(300, Math.min(sublistHeight, 1000)),
 
         draw(progress) {
           sublist.style.height = sublistHeight - sublistHeight * progress + "px";
