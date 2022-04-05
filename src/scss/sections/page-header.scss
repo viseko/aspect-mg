@@ -123,6 +123,12 @@
   }
 }
 
+@media (max-width: $desktop-sm) and (min-width: $tablet + 1px)  {
+  .page-header__logo {
+    margin-left: -80px;
+  }
+}
+
 // Tablet
 @media (max-width: $tablet) {
   .page-header__contacts--address {
