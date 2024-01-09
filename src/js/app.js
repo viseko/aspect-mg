@@ -3,6 +3,7 @@
 import * as flsFunctions from "./modules/functions.js";
 import {adaptiveMove} from "./modules/adaptive-move.js";
 import {loadYandexMap} from "./modules/yandex-map.js";
+import "./modules/gallery.js";
 
 // Запуск основных функций
 flsFunctions.isWebp();
