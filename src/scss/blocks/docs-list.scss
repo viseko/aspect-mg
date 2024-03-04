@@ -1,0 +1,60 @@
+.docs-list {
+  max-width: 682px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid $cl-gray;
+
+  &__item {
+    border-bottom: 1px solid $cl-gray;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 40px 35px 0;
+    color: $cl-black;
+
+    @media (max-width: $sm) {
+      padding: 14px 0 18px;
+      gap: 16px;
+    }
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+
+      @media (max-width: $sm) {
+        width: 20px;
+        height: 20px;
+      }
+
+      &--pdf {
+        color: #B51E16;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      line-height: 24px;
+      transition: color 0.3s;
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+    }
+
+    &-arrow {
+      width: 16px;
+      height: 16px;
+      color: $cl-blue;
+      transition: transform $bezier 0.3s;
+    }
+
+    &:hover &-title {
+      color: $cl-blue;
+    }
+
+    &:hover &-arrow {
+      transform: translateX(30%);
+    }
+  }
+}

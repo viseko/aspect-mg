@@ -25,3 +25,17 @@ $mobile: 425px;
 // Retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+// Контрольные точки
+$xxs: 374px;
+$xs: 400px;
+$sm: 576px; // mobile
+$md: 768px;
+$lg: 992px; // tablet
+$lg-header: 1065px;
+$xl: 1200px; // desktop
+$xxl: 1400px;
+
+// Анимации и переходы
+$bezier: cubic-bezier(0, 0, 0.4, 1); // станд. функция перехода
+
