@@ -36,29 +36,29 @@ header.page__header.page-header
       .page-header__contacts.page-header__contacts--address(data-am=".mobile-menu__contacts/(max-width: 800px)")
         .page-header__contact-item
           .page-header__contact-icon
-            +svgSprite("geo", 12, 18)
+            +icon("geo", 12, 18)
           .page-header__contact-text
             | #{contacts.address.slice(contacts.address.indexOf(",") + 2)}
         .page-header__contact-item
           .page-header__contact-icon
-            +svgSprite("clock", 18, 18)
+            +icon("clock", 18, 18)
           .page-header__contact-text
             | #{contacts.time}
       .page-header__contacts
         .page-header__contact-item
           .page-header__contact-icon
-            +svgSprite("phone", 18, 18)
+            +icon("phone", 18, 18)
           .page-header__contact-text
             .page-header__contact-description.bvi-hide
               | Запись по телефону:
             a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
         .page-header__contact-item(data-am=".page-header__contacts--address/(max-width: 800px)")
           .page-header__contact-icon
-            +svgSprite("vk", 18, 18)
+            +icon("vk", 18, 18)
           .page-header__contact-text
             a(href=`${contacts.socials.vk}`  target="_blank" rel="noopener noreferrer") Группа в ВК
       button#js-menu-btn.page-header__mobile-menu-btn
-        +svgSprite("menu", 23, 23)
+        +icon("menu", 23, 23)
         span.visually-hidden Открыть мобильное меню
   nav.page-header__nav
     .container
@@ -77,6 +77,6 @@ header.page__header.page-header
             span #{name}
       .page-header__change-version
         button.page-header__change-version-btn.bvi-open
-          +svgSprite("eye", 22, 15)
+          +icon("eye", 22, 15)
           span Версия для слабовидящих
 

@@ -6,22 +6,22 @@ section.section.contacts
         .contacts__row
           p #{contacts.address}
           .contacts__icon
-            +svgSprite("geo", 11, 16)
+            +icon("geo", 11, 16)
         .contacts__row
           p ост. #{contacts.bus[0]}, #{contacts.bus[1]}м
           .contacts__icon
-            +svgSprite("bus", 14, 17)
+            +icon("bus", 14, 17)
         .contacts__row
           p
             a(href=`tel:${contacts.phones[0]}`) #{contacts.phones[0]}
             | ,#{` `}
             a(href=`tel:${contacts.phones[1]}`) #{contacts.phones[1]}
           .contacts__icon
-            +svgSprite("phone", 16, 16)
+            +icon("phone", 16, 16)
         .contacts__row
           p #{contacts.time}
           .contacts__icon
-            +svgSprite("clock", 16, 16)
+            +icon("clock", 16, 16)
   .contacts__map.js-map-wrapper#js-map-wrapper
     img(src="@img/map/map.png", alt="Аспект Медикал Груп, схема проезда")
     button.contacts__map-loader.js-map-loader

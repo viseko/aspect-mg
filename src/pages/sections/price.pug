@@ -32,7 +32,7 @@ section.section
         li.price-table__item.price-table__item--sublist.price-table__item--top
           button.price-table__item-name.price-table__btn-show #{serviceType.name}
             .price-table__item-arrow
-              +svgSprite("arrow-right", 12, 20)
+              +icon("arrow-right", 12, 20)
 
           ul.price-table__sublist
             each serviceItem in serviceType.details
@@ -42,7 +42,7 @@ section.section
                 li.price-table__item.price-table__item--sublist
                   button.price-table__item-name.price-table__btn-show #{serviceItem.name}
                     .price-table__item-arrow
-                      +svgSprite("arrow-right", 12, 20)
+                      +icon("arrow-right", 12, 20)
                   ul.price-table__sublist
                     each item in serviceItem.details
                       +serviceItem(item, true)
